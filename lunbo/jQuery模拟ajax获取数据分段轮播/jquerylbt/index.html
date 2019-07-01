@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点击轮播图</title>
+<style>
+*{margin:0;padding: 0;}
+ul li{list-style: none;}
+/*.banner_hide{display: none;}*/
+.top{
+	width: 545px;
+	margin: 0 auto 0;
+	text-align: center;
+}
+.top h2{line-height: 60px;font-size: 18px;}
+.btn_block span{
+	display: inline-block;
+	width: 40px;height: 50px;
+	background-color: rgba(0,0,0,.6);
+	color: #ffffff;
+	font-size: 30px;
+	font-family: "宋体";
+	line-height: 50px;
+	cursor: pointer;
+}
+.btn_block span:hover{
+    background-color: rgba(0,0,0,.8)
+}
+/****************主要样式 start*************/
+.banner_block,.banner_hide{
+	width: 678px;
+	height: 180px;
+	overflow: hidden;
+	position: relative;
+	margin:20px auto;
+	border: 1px dashed #ff0000;
+}
+#banner,#hide_block{
+	position: absolute;
+	left: 0;top: 0;
+	width: 20000px;
+	padding-top: 7px;
+}
+#banner ul{
+	float: left;
+	/*若li是4的倍数就不设宽*/
+	width: 690px;
+}
+#banner ul li,.hideUl{
+	display: inline-block;
+	margin-right: 10px;
+	border:1px solid #dddddd;
+	vertical-align: top;
+
+}
+.bannerIn{
+	width: 120px;
+	height: 125px;
+	padding: 20px;
+	text-align: center;
+	line-height: 25px;
+	font-size: 16px;
+	vertical-align: middle;	
+}
+/***********主要样式 end***********/
+#banner ul li p{
+	color: #696969;
+	font-size: 18px;
+}
+.txt{color: #f40;}
+.clearfix:after {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    display: block;
+    visibility: hidden;
+    content: " ";
+    line-height: 0;
+}
+</style>
+</head>
+<body>
+
+  <div class="top">
+  	<h2>1、数据直接存在元素中未分组,(目前是12条)</h2>
+  	<div class="btn_block">
+  	    <span class="btn_L">&lt;</span>
+  		<span class="btn_R">&gt;</span>
+
+  	</div>
+  </div>
+  <!-- 将数据取出来存起来 start-->
+  <div class="banner_hide">
+	   <div id="hide_block"></div>
+  </div>
+  <!-- 将数据取出来存起来 end-->
+  <div class="top">
+  	<h2>2、数据按每组4条存放 ，(目前是12条)</h2>
+  	<div class="btn_block">
+  		<span class="btn_l">&lt;</span>
+  		<span class="btn_r">&gt;</span>
+  	</div>
+  </div>
+	<div class="banner_block">
+		<div id="banner" class="clearfix"></div>
+	</div>
+
+
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script>
+	var obj = {
+            1: "value1",
+            2: "value2",
+            count: 3,
+            person: [   
+                        {
+                            id: 1,
+                            name: "刘一",
+                            pic: "1.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第一条内容</p>"
+                        },
+                        {
+                            id: 2,
+                            name: "赵二",
+                            pic: "2.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第二条内容</p>"
+                        },
+                        {
+                            id: 3,
+                            name: "张三",
+                            pic: "3.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第三条内容</p>"
+                        },
+                        {
+                            id: 4,
+                            name: "李四",
+                            pic: "4.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第四条内容</p>"
+                        },
+                        {
+                            id: 5,
+                            name:"王五",
+                            pic: "5.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第五条内容</p>"
+                        },
+                        {
+                            id: 6,
+                            name:"秦六",
+                            pic: "6.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第六条内容</p>"
+                        },
+                        {
+                            id: 7,
+                            name:"欧阳七",
+                            pic: "7.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第七条内容</p>"
+                        },
+                        {
+                            id: 8,
+                            name:"齐八",
+                            pic: "8.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第八条内容</p>"
+                        },
+                        {
+                            id: 9,
+                            name:"吴九",
+                            pic: "9.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第九条内容</p>"
+                        },
+                        {
+                            id: 10,
+                            name:"甄十",
+                            pic: "10.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第十条内容</p>"
+                        },
+                        {
+                            id: 11,
+                            name:"唐壹",
+                            pic: "11.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第十一条内容</p>"
+                        },
+                        {
+                            id: 12,
+                            name:"萧贰",
+                            pic: "12.png",
+                            code:"<p style='color:#f40;font-size:16px;'>这是第十二条内容</p>"
+                        },
+                        // {
+                        //     id: 13,
+                        //     name:"曹参",
+                        //     code:"<p style='color:#f40;font-size:16px;'>这是第十三条内容</p>"
+                        // }
+                        
+                   ],
+            object: { //对象结构JSON对象
+                id: 2,
+                msg: "对象里的对象"    
+            }
+        };
+</script>
+<script>
+	$(function(){
+	/*********数据获取 start *********/
+     var list = obj.person;
+     var hml = '';
+
+     $.each( list,function( index,dto ) {
+         hml += '<ul class="hideUl">';
+         hml += 	'<li>';
+         hml += 	'<div class="bannerIn">';
+         hml +=   	'<p>'+dto.pic+'</p>';
+         hml +=   	'<div class="txt">'+dto.name+'</div>';
+         hml +=   	'<div class="txt">'+dto.code+'</div>';
+         hml += 	'</div>';
+         hml += 	'</li>';
+         hml += '</ul>';
+     })
+     //把数据暂时存放于此
+
+    $("#hide_block").html(hml);
+     /*********数据分组 start *********/
+     //创建空数组
+     var add1 = [];
+     var add2 = [];
+
+     var lens = $(".banner_hide").find("li").length;
+     // var $ul = document.createElement("ul");
+     var $ul = '<ul class="bannerUl"></ul>';
+
+     for(var i=0;i < lens;i++){
+     	  add1.push(i)
+     }
+     //console.log(add1);
+     //分割数组
+     for(var i = 0 ,len =add1.length ;i < len ;i+=4){
+
+         add2.push(add1.slice(i,i+4));
+
+     }
+     //console.log(add2);
+     //console.log(add2.length);
+
+     for(var i = 0 ,len = add2.length ;i < len;i++){
+         
+         $("#banner").append($ul);
+         for(var j = 0 ;j < add2[i].length ;j++){
+         	  console.log(i);
+         	  $(".bannerUl").eq(i).append($(".banner_hide ul").eq(add2[i][j]).html());
+         }
+     }
+     
+     /*********数据分组 end *********/
+
+     /*********有缝轮播 start *********/
+
+     /*
+      *banner 存放数据的容器
+      *bannerUl 容器下子级元素
+      *btnl,btnR 分别是左、右按钮
+      *num  显示数据的个数
+      */
+     function runing(banner,bannerUl,btnl,btnR,num){
+            var h = 0;
+            // 此为有缝轮播，故不用clone
+            //var clone = $("."+bannerUl).first().clone();
+            // $("#"+banner).append(clone);
+            
+            var bannerulSize = $("."+bannerUl).first().find("li").length;
+            
+            var liwid = $("."+bannerUl).first().width();
+            //计算marginRight的距离，因为有间隙
+            var marginR = parseInt($("."+bannerUl).css("marginRight"));
+            //如果num==4,数据是分过组的，是例2的情况;否则是数组没分组，是例1的情况
+            if(bannerulSize == num){
+
+                var liWidt = liwid;
+                var lis = $("."+bannerUl).length;
+            }else{
+                var str = [];
+            	var liWidt = liwid*num + marginR*(num+1) ;
+            	 
+            	var banul = $( "." + bannerUl );
+            	for(var i = 0 ;i < banul.length ;i += num){
+            	 	str.push(banul.slice(i,i+num));
+            	}
+            	var lis = str.length;        	            	 
+            }            
+
+            //console.log(lis);
+            //左边箭头点击事件
+            $("."+btnl).click(function(){
+                h--;
+                runing();
+            });
+            //右边箭头点击事件
+            $("."+btnR).click(function(){
+                h++;
+                runing();
+            });
+            
+            function runing(){
+
+                if(h == lis){
+                    $("#"+banner).animate({ "left": 0},500).stop(true);
+                    h = 0;
+                }
+                if(h == -1){
+                    $("#"+banner).animate({ "left": -(lis - 1) * liWidt },500).stop(true);
+                    h = lis-1;
+                }
+                $("#"+banner).animate({ "left": -h * liWidt },800);  
+            }
+      }
+      // 例1调用
+      runing("hide_block","hideUl","btn_L","btn_R",4);
+      // 例2调用
+      runing("banner","bannerUl","btn_l","btn_r",4);
+      
+	});
+</script>
+</html>

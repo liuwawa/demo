@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-themes-web-app-capable" content="yes">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="format-detection" content="telephone=no">
+		<title>夺宝记录</title>
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/modify-main.css" type="text/css" media="all" />		
+		<link rel="stylesheet" href="css/public.css" />
+	</head>
+
+	<body>
+
+		<!--页面加载 开始-->
+		<div id="preloader">
+			<div id="status">
+				<p class="center-text"><span>拼命加载中···</span></p>
+			</div>
+		</div>
+		<!--页面加载 结束-->
+		<header id="header">
+			<div class="header_con">
+				<a href="javascript:history.go(-1);"></a>
+				<div class="top_tit">联系我们</div>
+				<div class="right_div">
+					<a href="">留言</a>
+				</div>
+			</div>
+		</header>
+		<!--头部文字部分-->
+		<div id="content_div_per" >
+			<div class="per_list" style="padding-top: 0.26rem;">
+				<dl>
+					<dt>您可能以下需要我们</dt>
+					<dd>1、广告投放</dd>
+					<dd>2、软件使用问题</dd>
+					<dd>3、加盟我们</dd>
+				</dl>
+				<ul style="padding-top: 0.26rem;">
+					<li>邮箱：www.facebook.com</li>
+					<li>联系我们：15652554154</li>
+					<li>公众号：答题APP</li>
+					<li>电话：0551-125200</li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="content_div" style="min-height:auto;padding-bottom: 0.80rem;">
+			<div class="yy_jl_tit">
+				<a class="change_c"><span>全部留言</span></a>
+				<a><span>我的留言</span></a>
+				</h2>
+			</div>
+			<div class="yy_jl_box">
+				<div class="per_jl_db">
+					<ul>
+						<li class="fl w15 photo-left">
+							<span class="photo-per"><img src="images/center-photo.png" /></span>
+							<h3>王伟</h3>
+						</li>
+						<li class="fr w80 photo-right">
+							<h2>这个什么时候可以答题？<span class="fr fr-time">30分钟前</span></h2>
+							<div class="bg-per"> <span>管理员回复王伟：晚上八点答题不定期更新派发奖品</span></div>							
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+					<ul>
+						<li class="fl w15 photo-left">
+							<span class="photo-per"><img src="images/center-photo.png" /></span>
+							<h3>王伟</h3>
+						</li>
+						<li class="fr w80 photo-right">
+							<h2>这个什么时候可以答题？<span class="fr fr-time">30分钟前</span></h2>
+							<div class="bg-per"> <span>管理员回复王伟：晚上八点答题不定期更新派发奖品</span></div>							
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+					<ul>
+						<li class="fl w15 photo-left">
+							<span class="photo-per"><img src="images/center-photo.png" /></span>
+							<h3>王伟</h3>
+						</li>
+						<li class="fr w80 photo-right">
+							<h2>这个什么时候可以答题？<span class="fr fr-time">30分钟前</span></h2>
+							<div class="bg-per"> <span>管理员回复王伟：晚上八点答题不定期更新派发奖品</span></div>							
+						</li>
+						<div class="clearfix"></div>
+					</ul>
+				</div>
+			</div>
+
+			<div class="yy_jl_box" style="display:none;">
+				<div class="yy_jl_no">
+					<i></i>
+					<p>您还没有夺宝记录哦！</p>
+					<a>立即夺宝</a>
+				</div>				
+			</div>			
+	</div>
+		<!--底部-->
+            <div class="bottom_box">
+            	<div class="tab_bar" id="index" onclick="document.location.href='index.html';">
+            		<img src="img/index.png"/>
+            		<p >首页</p>
+            	</div>
+            	<div class="tab_bar" id="jf" onclick="document.location.href='integral.html';">
+            		<img src="img/jifen.png"/>
+            		<p>积分</p>
+            	</div>
+            	<div class="tab_bar" id="call" onclick="document.location.href='personal-callme.html';">
+            		<img src="img/call_on.png"/>
+            		<p style="color: #5496F9;">联系我们</p>
+            	</div>
+            	<div class="tab_bar" id="my" onclick="document.location.href='personal-center.html';">
+            		<img src="img/my.png"/>
+            		<p>我的</p>
+            	</div>
+            </div>
+            
+            
+		<!--底部结束-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+		  	$('#index').click(function(){
+		  		$('#jf>p,#call>p,#my>p').css('color','#323232');
+		  		$('#index>p').css('color','#5496F9');
+		  		$('#index>img').attr('src','img/index_on.png');
+		  		$('#jf>img').attr('src','img/jifen.png');
+		  		$('#call>img').attr('src','img/call.png');
+		  		$('#my>img').attr('src','img/my.png');
+		  	})
+		  	
+		  	$('#jf').click(function(){
+		  		$('#index>p,#call>p,#my>p').css('color','#323232');
+		  		$('#jf>p').css('color','#5496F9');
+		  		$('#jf>img').attr('src','img/jifen_on.png');
+		  		$('#index>img').attr('src','img/index.png');
+		  		$('#call>img').attr('src','img/call.png');
+		  		$('#my>img').attr('src','img/my.png');
+		  	})
+		  	
+		  	$('#call').click(function(){
+		  		$('#jf>p,#index>p,#my>p').css('color','#323232');
+		  		$('#call>p').css('color','#5496F9');
+		  		$('#call>img').attr('src','img/call_on.png');
+		  		$('#jf>img').attr('src','img/jifen.png');
+		  		$('#index>img').attr('src','img/index.png');
+		  		$('#my>img').attr('src','img/my.png');
+		  	})
+		  	
+		  	$('#my').click(function(){
+		  		$('#jf>p,#call>p,#index>p').css('color','#323232');
+		  		$('#my>p').css('color','#5496F9');
+		  		$('#my>img').attr('src','img/my_on.png');
+		  		$('#jf>img').attr('src','img/jifen.png');
+		  		$('#call>img').attr('src','img/call.png');
+		  		$('#index>img').attr('src','img/index.png');
+		  	})
+		  </script>
+	</body>
+
+</html>

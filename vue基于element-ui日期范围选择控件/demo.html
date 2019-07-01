@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Mr吴</title>
+		<link rel="stylesheet" href="css/element.min.css">
+	</head>
+	<body>
+		<div id="myVue">
+			<el-row style="text-align: center;margin-top: 100px;background: #F1F1F1;">微信：<a href="#">MRJYZX-15-04-16</a> || QQ：<a href="#">978434783</a></el-row>
+			<el-row style="text-align: center;background: #F1F1F1;">本人个人主页：<a href="http://wuhaoran0409.github.io">wuhaoran0409.github.io</a></el-row>
+			<el-row style="text-align: center;background: #F1F1F1;">有什么不会的加微信或者qq</a></el-row>
+			<h2>二款通用日期选择，基于element-ui</h2>
+			<template>
+			  <div class="block">
+			    <p class="demonstration">日期单选</p>
+			    <el-date-picker
+			      v-model="value8"
+			      type="date"
+			      placeholder="选择日期"
+			      default-value="2010-10-01">
+			    </el-date-picker>
+			    <span>您选择的：{{value8}}</span>
+			  </div>
+			  <div class="block">
+			    <p class="demonstration">日期范围</p>
+			    <el-date-picker
+			      v-model="value9"
+			      type="daterange"
+			      start-placeholder="开始日期"
+			      end-placeholder="结束日期"
+			      default-value="2010-10-01">
+			    </el-date-picker>
+			    <span>您选择的：{{value9}}</span>
+			  </div>
+			</template>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/vue.min.js" ></script>
+	<script src="js/element.min.js"></script>
+    <script type="text/javascript">
+		new Vue({
+		    el: '#myVue',
+			 data() {
+			 	return {
+					value8: '',
+					value9: ''
+			 	}
+			 },
+		    methods: {
+		    }
+		})
+	</script>
+</html>

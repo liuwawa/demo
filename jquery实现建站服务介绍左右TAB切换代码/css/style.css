@@ -1,0 +1,269 @@
+/* 公共样式表css */
+html,body {
+    color: #333;
+    margin: 0;
+    height: 100%;
+    font-family: "Myriad Set Pro","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    border: 0;
+}
+
+body {
+    background: #fff;
+    color: #666;
+}
+
+html, body, div, dl, dt, dd, ol, ul, li, h1, h2, h3, h4, h5, h6, p, blockquote, pre, button, fieldset, form, input, legend, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #08acee;
+}
+
+button {
+    outline: 0;
+}
+
+img {
+    border: 0;
+}
+
+button,input,optgroup,select,textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #eee;
+}
+
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.clearfix {
+}
+
+/* 必要布局样式css */
+.serve-content {
+    position: relative;
+}
+
+.serve-content-box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.serve-content-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+    padding-top: 124px;
+    padding-bottom: 15px;
+}
+
+.serve-content-text {
+    width: 184px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    background: url(../images/icon-line.jpg) repeat-x left center;
+}
+
+.serve-content-text em {
+    display: inline-block;
+    padding: 0 10px;
+    background: #FFF;
+    font-size: 14px;
+    color: #777;
+    font-style: normal;
+}
+
+.serve-content-btn {
+    text-align: center;
+    padding: 45px 0 104px;
+}
+
+.serve-content-btn a {
+    display: inline-block;
+    width: 190px;
+    height: 55px;
+    background-color: rgb(0, 162, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(4, 195, 255, 0.5) 0px 5px 15px;
+    border-radius: 8px;
+    font: 400 16px/55px 微软雅黑;
+}
+
+.serve-content-list {
+    float: left;
+    width: 270px;
+    height: 348px;
+}
+
+.serve-content-info {
+    width: 640px;
+    height: 337px;
+    float: left;
+    margin: 0 10px;
+    position: relative;
+}
+
+.serve-content-btn a:hover {
+    background: #41b8fc;
+}
+
+.serve-content-middle {
+    overflow: hidden;
+}
+
+.serve-content-list ul li {
+    display: block;
+    width: 266px;
+    padding: 37px 0;
+    background: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.serve-content-list ul .on {
+    background: #FFF;
+    border: 2px solid #00aeff;
+}
+
+.serve-content-list ul li span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    float: left;
+    margin-left: 72px;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.serve-content-list ul li span img {
+    display: block;
+    float: left;
+}
+
+.serve-content-list ul li p {
+    display: block;
+    overflow: hidden;
+    line-height: 28px;
+    color: #333;
+    font-size: 18px;
+}
+
+.serve-content-list ul .on p {
+    color: #00aeff;
+}
+
+.serve-content-list ul .on span img {
+    margin-top: -28px;
+}
+
+.serve-content-info ul {
+    width: 640px;
+    height: 337px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.serve-image-img {
+}
+
+.serve-image-box {
+    background: url(../images/cclarity-bg.png);
+    width: 640px;
+    height: 195px;
+    padding: 47px 159px;
+    position: absolute;
+    top: 72px;
+    left: 0;
+}
+
+.serve-image-comm1 {
+    width: 48px;
+    height: 29px;
+    position: absolute;
+    left: 80px;
+    top: 28px;
+}
+
+.serve-image-comm2 {
+    width: 48px;
+    height: 29px;
+    position: absolute;
+    right: 95px;
+    bottom: 35px;
+}
+
+.serve-image-info {
+    width: 322px;
+    height: 99px;
+}
+
+.serve-image-info-title {
+    overflow: hidden;
+}
+
+.serve-image-info-title span {
+    display: block;
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.serve-image-info-title span img {
+    display: block;
+    float: left;
+}
+
+.serve-image-info-title p {
+    line-height: 32px;
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #fff;
+}
+
+.serve-image-info strong {
+    display: block;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 24px;
+    padding-top: 14px;
+}

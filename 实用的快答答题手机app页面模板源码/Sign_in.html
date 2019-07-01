@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta id="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="apple-themes-web-app-capable" content="yes">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="email=no" name="format-detection">
+		<meta name="format-detection" content="telephone=no">
+		<title>登录</title>	
+		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/sign.css"/>
+	</head>
+
+	<body>
+		<div class="sign_box">
+			<!--logo------------------------->
+			<div class="logo_box">
+				<img src="img/sign_logo.png"/>
+			</div>
+			<!--输入框------------------------->
+			<div class="input_box" style="margin-top: 0.5rem;">
+				<div class="input_box_left">
+					账号
+				</div>
+				<div class="input_box_right">
+					<input type="text"  id="phone_number" placeholder="请输入手机号码"/>
+				</div>
+			</div>
+			<div class="input_box">
+				<div class="input_box_left">
+					密码
+				</div>
+				<div class="input_box_right">
+					<input type="text"  id="cord_number" placeholder="请填写密码"/>
+				</div>
+			</div>
+			<!--btn------------------------->
+			<div class="input_box btn_sm" style="margin-top: 0.4rem;">
+				<input type="button" id="res_btn" value="登录" />
+			</div>
+			<div class="input_box btn_sm" style="margin-top: 0.08rem;">
+				<p>
+					<img src="img/check.png"/>
+					我已阅读并同意
+					<a href="#">服务条款</a>
+				</p>
+			</div>
+			<!--忘记密码------------------------------>
+			<div class="forget_box">
+				<a href="forget_phone.html">忘记密码?</a>
+				<a href="#">新用户注册</a>
+			</div>
+			<div class="line_gray"></div>
+			<div class="three_box">
+				使用其他账号登录
+			</div>
+			<div class="wechat_sign">
+				<a href="#">
+					<img src="img/wechat_sign.png"/>
+					<p>微信登录</p>
+				</a>
+			</div>
+		</div>
+
+		
+		
+        <!--底部-->
+		<!--底部结束-->
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/carousel-image.js"></script>
+		<script>
+			$('.carousel-image').CarouselImage({
+				num: $('.carousel-image .carousel-num'),
+				repeat: true
+			});
+		</script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+	</body>
+
+</html>

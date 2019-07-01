@@ -1,0 +1,260 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,div,select{
+	margin:0;
+	padding:0;
+} 
+body{
+  font-size:14px;
+  -webkit-text-size-adjust:100%;
+  background: #f9f9f9;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+*{
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,body{
+  height:100%;
+}
+
+img{
+	display: inline-block;
+	height: auto;
+  width: 100%;
+	border:0 none;
+}
+a{
+	text-decoration:none;
+	color: #666;
+} 
+em{
+	font-style:normal;
+} 
+li{
+	list-style:none;
+}
+p{
+	word-wrap:break-word;
+} 
+
+.clearfix:after{
+	content:'.';
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+.hide{display:none;}
+
+.btn{
+  width: 3rem;
+  padding: 0 0.25rem;
+  background: #ccc;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  height: 1.8rem;
+  line-height: 2rem;
+}
+
+.btn_org{
+  color:#fff;
+  background:#DC680A;
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,.5);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#7f000000,endColorstr=#7f000000)";
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+  z-index: 98;
+}
+
+/* 卡券信息 */
+.pan_list{
+  padding:.5rem;
+  border-bottom:1px solid #ddd;
+}
+
+.cp_desc{
+  padding:.3rem;
+}
+
+.cp_dtl>span{
+  display: inline-block;
+  width: 50%;
+}
+
+.pan_list.large .cp_dtl span{ 
+  float: left;
+  width: 50%;
+  padding-bottom: .3rem;
+  box-sizing: border-box;
+}
+
+.pan_list.large .cp_tit{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: #4b566a;
+}
+
+.pan_list.large .cp_desc .cp_price,.pan_list.large .cp_desc .cp_dtl{
+  color:#666;
+}
+
+.pan_list.large .cp_price{
+  padding:.3rem 0;
+}
+
+/* 列表详情 */
+.pan_list.list_view .cp_dtl span{ 
+  float: left;
+  width: 50%;
+  padding-bottom: .3rem;
+  box-sizing: border-box;
+}
+
+.pan_list.list_view .cp_img img{
+  width:100px;
+  height:100px;
+}
+
+.pan_list.list_view .cp_desc{
+  padding:.3rem .5rem;
+}
+
+.pan_list.list_view .cp_dtls{
+  display:flex;
+}
+
+.pan_list.list_view .cp_tit{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  color: #4b566a;
+}
+
+.pan_list.list_view .cp_desc .cp_price,.pan_list.large .cp_desc .cp_dtl{
+  color:#666;
+}
+
+.pan_list.list_view .cp_price{
+  padding:.3rem 0;
+}
+
+
+/* 导航栏查询条件 */
+.btn-group{
+  display:flex;
+  border-bottom:1px solid #ddd;
+  background:#fff;
+  position: relative;
+  z-index: 98;
+  justify-content: center;
+}
+
+.search_rule li{
+  display:flex;
+  justify-content: center;
+}
+
+.search_rule{
+  display: flex;
+  position:relative;
+}
+
+.search_rule>p{
+  height:35px;
+  cursor:pointer;
+  line-height:35px;
+}
+
+.search_rule p.active{
+  color:#e66b37;
+}
+
+.search_rule p.active .sort_rule{
+  border-top-color:#e66b37;
+}
+
+.menu_list .active{
+  color:#e66b37;
+}
+
+.cp_dtl_list .cp_dtls{
+  padding:.5rem 0;
+  border-bottom:1px solid #dbdbdb;
+}
+
+.sort_rule{
+  width:0; 
+  height:0;
+  border:5px solid transparent;
+  border-top-color:#aaa;
+  position:absolute;
+  top: 50%;
+  margin-top: -3px;
+  margin-left: 3px;
+}
+
+.search_rule .def_sort span{
+  padding-right: 1.5rem;
+}
+
+.search_rule>p>span{
+  padding:0 1rem;
+  border-right:1px solid #ddd;
+}
+
+.icon_toggle{
+  display: flex;
+  align-items: center;
+}
+
+.icon_toggle>span{
+  display:inline-block;
+  width:25px;
+  height:25px;
+  margin-left:.5rem;
+}
+
+.icon_toggle>span{
+  background:url(../image/s_view.png);
+  background-size:100%;
+}
+
+.icon_toggle.active>span{
+  background:url(../image/m_view.png);
+  background-size:100%;
+}
+
+.menu_list{
+  height:auto;
+  width:100%;
+  background:#fff;
+  z-index:99;
+  min-height:3rem;
+}
+
+.menu_list ul{
+  padding: 0 1rem;
+}
+
+.menu_list li{
+  padding: 0.5rem 0.5rem;
+  border-bottom:1px solid #ddd;
+}

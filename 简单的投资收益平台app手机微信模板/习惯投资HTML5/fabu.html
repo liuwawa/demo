@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>发布计划</title>
+    <meta name="keywords" content="">
+    <meta name="description" content=""> 
+    <script src="js/rem.js"></script> 
+    <script type="text/javascript" src="js/jquery.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+</head>
+<body>
+	<div class="fabu clearfloat">
+		<input type="text" name="" id="" value="" placeholder="标题" class="tit" />
+		<textarea name="" rows="5" cols="" class="shuru" placeholder="请描述计划详情"></textarea>
+		<div class="xia clearfloat">
+			<span class="fl"><input type="text" name="" id="" value="" placeholder="请输入微信号" class="tit"></span>
+			<div class="you fr clearfloat">				
+				<a href="#" class="toggle toggle--on fr"></a>
+				<samp class="fr">是否公开</samp>
+			</div>
+		</div>
+	</div>
+	<div class="czhi czhitwo clearfloat">
+		<p class="crjine">存入保证金</p>
+		<div class="top clearfloat">
+			<div class="list clearfloat fl box-s">
+				<div class="zuo clearfloat fl">
+					<div class="radiofour"> 
+					    <label>
+					        <input type="radio" name="xze" value="">
+					        <div class="option"></div>
+					    </label>
+					</div>
+				</div>
+				<div class="you clearfloat fl">
+					<p class="tit"><img src="img/5.png">100 = ¥100</p>
+					<p class="fu-tit"><span>28</span>人已选择，预计年收益<span>347</span>元</p>
+				</div>
+			</div>
+			<div class="list clearfloat fl box-s">
+				<div class="zuo clearfloat fl">
+					<div class="radiofour"> 
+					    <label>
+					        <input type="radio" name="xze" value="">
+					        <div class="option"></div>
+					    </label>
+					</div>
+				</div>
+				<div class="you clearfloat fl">
+					<p class="tit"><img src="img/5.png">100 = ¥100</p>
+					<p class="fu-tit"><span>28</span>人已选择，预计年收益<span>347</span>元</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="bottom clearfloat box-s">
+			<div class="shang clearfloat">
+				¥
+				<input type="text" name="" id="" value="" placeholder="输入金额">
+			</div>
+			<p class="price">使用账户余额 ¥200.00</p>
+		</div>
+
+		<div class="wdbtn clearfloat">
+			<a href="fbsuccess.html" class="chongzhi fl">支付并发布计划</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$('.toggle').click(function(e){
+		
+			var toggle = this;
+			
+			e.preventDefault();
+		
+			$(toggle).toggleClass('toggle--on').toggleClass('toggle--off').addClass('toggle--moving');
+		
+			setTimeout(function(){
+				$(toggle).removeClass('toggle--moving');
+			}, 200)
+			
+		});
+	</script>
+</body>

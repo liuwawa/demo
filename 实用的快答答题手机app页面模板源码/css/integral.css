@@ -1,0 +1,280 @@
+.top_btn{
+	width: 100%;
+	height: 0.7rem;
+
+	margin-top: 0.15rem;
+}
+
+.left_btn,.right_btn{
+	width: 1.8rem;
+	height: 0.7rem;
+	background: #FFFFFF;
+	border: 1px solid #E7E7E7;
+}
+
+.left_btn{
+	float: left;
+	border-radius: 0px 0.35rem 0.35rem 0px;
+}
+
+.right_btn{
+	float: right;
+	border-radius:  0.35rem 0px 0px 0.35rem;
+}
+
+.left_btn button{
+	width: 0.66rem;
+	height: 0.66rem;
+	background: #5496F9;
+	border: none;
+	border-radius: 0.33rem;
+	margin-top: 0.02rem;
+	margin-left: 0.18rem;
+	/*box-shadow: 0px 2px 2px #5496F9;*/
+	font-size: 0.2rem;
+	line-height: 0.24rem;
+	color: #FFFFFF;
+}
+
+.right_btn button{
+	width: 1.78rem;
+	height: 0.66rem;
+	background: #5496F9;
+	border: none;
+	border-radius: 0.33rem 0px 0px 0.33rem;
+	margin-top: 0.02rem;
+	margin-left: 0.02rem;
+	font-size: 0.26rem;
+	color: #FFFFFF;
+}
+
+#content_div{
+	background: #FFFFFF !important;
+}
+
+.zs_cord{
+	width: 100%;
+	height: 1.8rem;
+	margin-top: 0.2rem;
+	position: relative;
+	top: -0.3rem;
+}
+
+.zs_cord ul{
+	width: 100%;
+	height: 2rem;
+	display: flex;
+}
+
+.zs_cord li{
+	flex: 1;
+}
+
+.pm_span,.yq_span{
+	width: 1.2rem;
+	height: 1.2rem;
+	background: #FAAD2C;
+	margin: auto;
+	border-radius: 0.6rem;
+	margin-top: 0.4rem;
+	text-align: center;
+}
+
+.pm_span{
+	float: right;
+	/*background-image: url(../img/orange_box.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	background: #fac638;
+	margin-right: 0.16rem;
+}
+
+.yq_span{
+	float: left;
+	/*background-image: url(../img/yellow_box.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;*/
+	background: #fadc38;
+	margin-left: 0.16rem;
+}
+
+.yq_span>p,.pm_span>p{
+	font-size: 0.24rem;
+	line-height: 0.28rem;
+}
+
+.title{margin-top: 0.34rem;}
+
+.zf_span{
+	width: 2rem;
+	height: 2rem;
+	margin: auto;
+	border-radius: 0.9rem;
+	background-image: url(../img/bg_cord.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.zf_span p{
+	font-size: 0.36rem;
+	line-height: 0.44rem;
+	position: relative;
+	top: 0.58rem;
+}
+
+.bq_box{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: -0.35rem;
+}
+
+.bq_box>p{
+	color: #323232;
+	font-size: 0.24rem;
+	margin-top: 0.28rem;
+}
+
+.bq_blank{
+	width: 5.4rem;
+	height: 2rem;
+	background-image: url(../img/jifen_blank.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	margin: auto;
+	position: relative;
+	top: 0.1rem;
+	z-index: 99;
+}
+
+.bq_blue{
+	background-image: url(../img/jifen_blue.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	width: 6rem;
+	height: 2.8rem;
+	margin: auto;
+	position: relative;
+	top: -0.30rem;
+}
+
+.bq_blank ul{
+	width: 5.2rem;
+	height: 1.2rem;
+	float: left;
+	margin-left: 0.1rem;
+	margin-top: 0.4rem;
+	display: flex;
+}
+
+.bq_blank li{
+	flex: 1;
+	background: #FFFFFF;
+}
+
+.bq_blank li>img{
+	width: 84%;
+	margin-top: 0.16rem;
+}
+
+.bq_blank li>p{
+	font-size: 0.18rem;
+	color: #323232;
+	margin-top: 0.1rem;
+}
+
+.acq_money,.acq_jp{
+	width: 5.2rem;
+	color: #323232;
+}
+
+.acq_money{
+	height: 0.7rem;
+	float: left;
+	margin-left: 0.4rem;
+	margin-top: 0.4rem;
+}
+
+.acq_money ul{
+	display: block;
+	width: 100%;
+	height: 0.7rem;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.acq_money li{
+	width: 1.8rem;
+	display: block;
+	line-height: 0.7rem;
+	float: left;
+	text-align: left;
+	font-size: 0.24rem;
+}
+
+.acq_money li>em{
+	color: #ff8921;
+	font-size: 0.3rem;
+}
+
+.acq_jp{
+	float: left;
+	margin-left: 0.4rem;
+	height: 1.43rem;
+	margin-top: 0.12rem;
+}
+
+.acq_jp li{
+	width: 1.8rem;
+	display: block;
+	line-height: 0.26rem;
+	float: left;
+	text-align: left;
+	font-size: 0.24rem;
+}
+
+.jp_lan{
+	width: 1.7rem;
+	float: left;
+	line-height: 0.24rem;
+	font-size: 0.22rem;
+}
+
+
+.fx_yq_btn{
+	width: 100%;
+	height: 0.8rem;
+	position: relative;
+	top: -0.5rem;
+	text-align: center;
+}
+
+#share_btn,#yq_btn{
+	width: 2.5rem;
+	background: #006CFF;
+	height: 0.8rem;
+	border: none;
+	border-radius: 0.4rem;
+	font-size: 0.22rem;
+}
+
+#yq_btn{
+	margin-left: 0.2rem;
+	font-size: 0.22rem;
+	line-height: 0.24rem;
+	color: #FFFFFF;
+	position: relative;
+	top: -0.13rem;
+}
+
+#yq_btn img{
+	width: 0.24rem;
+}
+
+#share_btn{
+	color: #FFFFFF;
+}
+
+#share_btn img{
+	width: 0.4rem;
+}

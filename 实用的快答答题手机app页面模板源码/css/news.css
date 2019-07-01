@@ -1,0 +1,74 @@
+
+.news_xx{
+	margin-top: 0.88rem;	
+}
+
+.news_time{
+	width: 40%;
+	height: 0.4rem;
+	background: #a7a7a7;
+	margin-top: 0.2rem;
+	float: left;
+	margin-left: 30%;
+	border-radius: 0.2rem;
+	opacity: 0.7;
+	text-align: center;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+}
+
+.news_box{
+	width: 86%;
+	margin-right:5%;
+	background: #FFFFFF;
+	float: right;
+	margin-top: 0.2rem;
+	color: #323232;
+	font-size: 0.24rem;
+	line-height: 0.3rem;
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 0.2rem;
+}
+
+#header .header_con span{float:left; display:block; position:absolute; top:0; left:0; width:0.48rem}
+#header .header_con span{ position:absolute; top:0.2rem; left:0.16rem;
+    display: inline-block;
+	background: url(../images/lk_icon.png) no-repeat !important;
+	background-size: 1.44rem 1.44rem !important;
+	width: 0.48rem !important;
+	height: 0.48rem !important;
+	background-position: 0rem 0rem !important;	
+}
+
+.sel_blue{
+	width: 0.5rem;
+	height: 0.5rem;
+	float: right;
+	position: relative;
+	top: -2.5rem;
+	right: 0.16rem;
+	background-image: url(../img/check.png);
+	background-repeat: no-repeat;	
+	background-size: 100% 100%;
+}
+
+
+
+.xx_xz{
+	width: 100%;
+	overflow: hidden;
+}
+
+#del{
+	width: 100%;
+	height: 0.8rem;
+	font-size: 0.3rem;
+	background: #f11c1c;
+	border: none;
+	color: #FFFFFF;
+	position: fixed;
+	bottom: 0px;
+}

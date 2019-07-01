@@ -1,0 +1,226 @@
+body{
+	background: #E7E7E7;
+}
+
+.about_box{
+	width: 100%;
+}
+
+.logo_MF{
+	text-align: center;
+	width: 100%;
+	margin-top: 1.3rem;
+	margin-bottom: 0.4rem;
+}
+
+.logo_MF img{
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.logo_MF p{
+	color: #323232;
+	font-size: 0.24rem;
+	margin-top: 0.2rem;
+}
+
+.sel_box{
+	width: 100%;
+	height: 0.7rem;
+	background: #FFFFFF;
+	margin-top: 0.02rem;
+}
+
+.word_title{
+	height: 0.5rem;
+	width: 4rem;
+	margin-top: 0.1rem;
+	margin-left: 0.16rem;
+	line-height: 0.5rem;
+	font-size: 0.3rem;
+	color: #323232;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+}
+
+.enter_jt{
+	height: 0.5rem;
+	width: 1rem;
+	float: right;
+	margin-top: 0.1rem;
+/*	background: #5496F9;*/
+}
+
+.enter_jt a{
+	display: block;
+	float: right;
+	margin-right: 0.16rem;
+	margin-top: 0.05rem;
+	background-image: url(../img/enter.png);
+	background-repeat: no-repeat;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-size: 0.2rem 0.35rem;
+	background-position: right;
+}
+
+.bb_word{
+	width:1.4rem;
+	float: right;
+	margin-right: 0.16rem;
+	text-align: right;
+}
+
+.tk_box{
+	width: 100%;
+	height: 1.1rem;
+	text-align: center;
+	color: #323232;
+	font-size: 0.24rem;
+	position: absolute;
+	bottom: 0px;
+}
+
+.tk_box a{
+	color: #5496F9;
+}
+
+.hx_cd{
+	width: 100%;
+	height: 0.98rem;
+}
+
+.function_box{
+	width: 96%;
+	margin-left: 2%;
+}
+
+.function_box p{
+	font-size: 0.24rem;
+	color: #323232;
+	line-height: 0.32rem;
+}
+
+.function_box ul{
+	width: 100%;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+
+.function_box li{
+	height: 4rem;
+	background: #006CFF;
+	width: 49%;
+	float: left;
+}
+
+.notic_box{
+	width: 100%;
+	height: 1rem;
+	margin-top: 0.02rem;
+}
+
+.not_left,.not_right{
+	float: left;
+	height: 1rem;
+	background: #FFFFFF;
+}
+
+.not_left{
+	width: 80%;
+}
+
+.xt_tz{
+	height: 0.5rem;
+	width: 4rem;
+	margin-top: 0.1rem;
+	margin-left: 0.16rem;
+	line-height: 0.5rem;
+	font-size: 0.26rem;
+	color: #323232;
+	overflow: hidden;
+	display: block;
+}
+
+.xt_sj{
+	height: 0.3rem;
+	width: 4rem;
+	margin-left: 0.16rem;
+	line-height: 0.3rem;
+	font-size: 0.2rem;
+	color: #989898;
+	text-align: left;
+	display: block;
+}
+
+
+.not_right{
+	width: 20%;
+}
+
+.not_right a{
+	display: block;
+	float: right;
+	margin-right: 0.16rem;
+	margin-top: 0.3rem;
+	background-image: url(../img/enter.png);
+	background-repeat: no-repeat;
+	width: 0.4rem;
+	height: 0.4rem;
+	background-size: 0.2rem 0.35rem;
+	background-position: right;
+}
+
+.update_xx{
+	width: 94%;
+	height: 3.2rem;
+	background: #FFFFFF;
+	margin: auto;
+	margin-top: 0.1rem;
+	border-radius: 6px;
+	text-align: center;
+}
+
+.update_xx img{
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-top: 0.3rem;
+}
+
+.update_xx p{
+	color: #323232;
+	font-size: 0.3rem;
+	margin-top: 0.15rem;
+}
+
+.update_xx ul{
+	margin-top: 0.2rem;
+}
+
+.update_xx li{
+	text-align: left;
+	width: 40%;
+	color: #323232;
+	line-height: 0.3rem;
+	height: 0.3rem;
+	font-size: 0.24rem;
+	list-style-type: disc;
+	margin-left: 30%;
+}
+
+#ud{
+	width: 94%;
+	margin-left: 3%;
+	height: 0.8rem;
+	background: #5496F9;
+	color: #FFFFFF;
+	font-size: 0.3rem;
+	border: 0px;
+	border-radius: 0.4rem;
+	margin-top: 0.5rem;
+}
+
+
+
+

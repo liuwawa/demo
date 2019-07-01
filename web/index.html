@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>首页</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta content="易工场" name="keywords">
+<meta content="易工场" name="description">
+<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="css/basestyle.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".links-btn").click(function(){
+		$(".popbox").show();
+		});
+	$(".close-btn").click(function(){
+		$(".popbox").hide();
+		});
+	});
+</script>
+</head>
+<body>
+<div class="diy-header">
+  <div class="logo"><a href="#"><img src="images/logo.png" /></a></div>
+  <div class="txt">展厅装修</div>
+  <div class="header-right tab">
+    <div class="username"><img src="images/user.png" /><span>宿迁华展工贸有限公司</span><a href="javascript:;" class="sign_out">退出</a></div>
+  </div>
+</div>
+<div class="diy-menu">
+  <div class="main-sidebar">
+    <div class="sidebar">
+	<ul class="sidebar-menu">
+	  <li class="menu-header">&nbsp;</li>
+	  <li class="treeview active">
+		<a href="zt-list.html">
+		  <i class="icon-hospital"></i>
+		  <span>我的展厅</span>
+		</a>
+        <ul class="treeview-menu">
+          <li><a href="zt-list.html" class="on">装修中</a></li>
+          <li><a href="zt-list.html">正在开展</a></li>
+          <li><a href="zt-list.html">已结束</a></li>
+		</ul>
+	  </li>
+	</ul>
+  </div>
+  </div>
+</div>
+<div class="diy-content">
+  <div class="U-list-box zt">
+    <ul class="tab">
+      <li><span class="fettle zx"></span><img src="upload/zt-model-01.jpg" /><div class="list-txt"><h1>易工场免费模板01</h1><p>所属展会：2016宿迁汽车展</p><p>购买时间：2015-10-10</p></div><a href="decorate.html"><span>开始装修</span></a></li>
+      <li><span class="fettle zx"></span><img src="upload/zt-model-01.jpg" /><div class="list-txt"><h1>易工场免费模板02</h1><p>所属展会：2016宿迁汽车展</p><p>购买时间：2015-10-10</p></div><a href="decorate.html"><span>开始装修</span></a></li>
+      <li><span class="fettle kzz"></span><img src="upload/zt-model-01.jpg" /><div class="list-txt"><h1>易工场免费模板03</h1><p>所属展会：2016宿迁汽车展</p><p>购买时间：2015-10-10</p></div></li>
+      <li><span class="fettle ygq"></span><img src="upload/zt-model-01.jpg" /><div class="list-txt"><h1>易工场免费模板04</h1><p>所属展会：2016宿迁汽车展</p><p>购买时间：2015-10-10</p></div></li>
+      <li><span class="fettle ygq"></span><img src="upload/zt-model-01.jpg" /><div class="list-txt"><h1>易工场免费模板04</h1><p>所属展会：2016宿迁汽车展</p><p>购买时间：2015-10-10</p></div></li>
+    </ul>
+    <div id="Pagination" class="pagination">
+        <span class="current prev">上一页</span>
+        <span class="current">1</span>
+        <a href="#">2</a><a href="#">3</a>
+        <a href="#">4</a>
+        <span>...</span>
+        <a href="#">8</a><a href="#" class="current next">下一页</a>
+    </div>
+  </div>
+</div>
+<div class="diy-operat" style="display:none;">
+  <h3 class="edit-title">模块编辑</h3>
+  <div class="form-item">
+    <label class="edit-label">替换标题</label>
+    <div class="edit-detail">
+      <input class="edit-input" type="text" placeholder="请输入文本">
+      <p class="edit-help">不超过20个字</p>
+    </div>
+    <label class="edit-label">标题链接</label>
+    <div class="edit-detail">
+      <input class="edit-input" type="text" placeholder="请输入文本">
+      <a href="javascript:;" class="links-btn"></a>
+    </div>
+  </div>
+  <div class="form-item">
+    <label class="edit-label">替换文本</label>
+    <div class="edit-detail">
+      <textarea class="edit-are"></textarea>
+      <p class="edit-help">不超过20个字</p>
+    </div>
+  </div>
+  <div class="form-item">
+    <label class="edit-label">替换图片</label>
+    <div class="edit-detail"><img src="images/upload.png" /></div>
+    <label class="edit-label">图片链接</label>
+    <div class="edit-detail">
+      <input class="edit-input" type="text" placeholder="请输入文本">
+      <a href="javascript:;" class="links-btn"></a>
+    </div>
+  </div>
+  <div class="savebox">
+    <a href="javascript:;" class="save">保存</a>
+    <a href="javascript:;" class="cancel">取消</a>
+  </div>
+</div>
+<div class="popbox" style="display:none;">
+  <div class="pop-tit">选择链接<a href="javascript:;" class="close-btn"><i class="icon-remove"></i></a></div>
+  <div class="pop-main">
+    <div class="pop-sear"><input type="text" class="form-control" placeholder="请输入关键字"><a href="javascript:;">搜索</a></div>
+    <div class="pop-pro-list">
+      <ul>
+        <li class="tab">
+          <div class="proimg fl"><img src="images/user.png" /></div>
+          <div class="protit fl">产品标题可爱的大美女呀</div>
+          <a href="javascript:;" class="fr">选择链接</a>
+        </li>
+        <li class="tab">
+          <div class="proimg fl"><img src="images/user.png" /></div>
+          <div class="protit fl">产品标题可爱的大美女呀</div>
+          <a href="javascript:;" class="fr">选择链接</a>
+        </li>
+        <li class="tab">
+          <div class="proimg fl"><img src="images/user.png" /></div>
+          <div class="protit fl">产品标题可爱的大美女呀</div>
+          <a href="javascript:;" class="fr">选择链接</a>
+        </li>
+        <li class="tab">
+          <div class="proimg fl"><img src="images/user.png" /></div>
+          <div class="protit fl">产品标题可爱的大美女呀</div>
+          <a href="javascript:;" class="fr">选择链接</a>
+        </li>
+        <li class="tab">
+          <div class="proimg fl"><img src="images/user.png" /></div>
+          <div class="protit fl">产品标题可爱的大美女呀</div>
+          <a href="javascript:;" class="fr">选择链接</a>
+        </li>
+      </ul>
+    </div>
+    <div class="pop-bottom tab">
+      <div class="pop-pagination">
+        <div id="Pagination" class="pagination pop">
+        <span class="current prev">上一页</span>
+        <span class="current">1</span>
+        <a href="#">2</a><a href="#">3</a>
+        <a href="#">4</a>
+        <span>...</span>
+        <a href="#">8</a><a href="#" class="current next">下一页</a>
+        </div>
+      </div>
+      <div class="pop-btn"><a href="javascript:;" class="sure">确定</a><a href="javascript:;" class="cancel">取消</a></div>
+    </div>
+  </div>
+</div>
+<script src="js/sidebar-menu.js"></script>
+<script>
+$.sidebarMenu($('.sidebar-menu'))
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>超炫酷的jQuery轮播焦点图DEMO演示</title>
+	<link rel="stylesheet" type="text/css" href="css/pgwslideshow.css">
+	<!--[if IE]>
+		<script src="http://www.jq22.com/jquery/html5.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="jq22-container">
+		<div class="jq22-content bgcolor-3">
+			<ul class="pgwSlideshow">
+			    <li><img src="img/a1.png" alt="San Francisco, USA" data-description="Golden Gate Bridge"></li>
+			    <li><img src="img/a2.png" alt="Rio de Janeiro, Brazil"></li>
+			    <li><img src="img/a3.png" alt="" data-large-src="img/a3.png"></li>
+			    <li><img src="img/a4.png" alt=""></li>
+			    <li><img src="img/a5.png" alt=""></li>
+			    <li><img src="img/a6.png" alt=""></li>
+			    <li><img src="img/a7.png" alt=""></li>		
+			</ul>
+		
+		</div>
+		
+	</div>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/pgwslideshow.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.pgwSlideshow').pgwSlideshow({
+		    	transitionEffect:'fading',
+		    	autoSlide:true
+		    });
+		});
+	</script>
+</body>
+</html>

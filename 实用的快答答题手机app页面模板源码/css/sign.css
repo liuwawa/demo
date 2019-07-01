@@ -1,0 +1,281 @@
+body{
+	background: #FFFFFF;
+	font-family: "微软雅黑";
+}
+
+.sign_box{
+	width: 100%;
+}
+
+.logo_box{
+	width: 100%;
+	text-align: center;
+	margin-top: 0.6rem;
+}
+
+.logo_box img{
+	width: 50%;
+}
+
+.input_box{
+	width: 80%;
+	height: 0.7rem;
+	margin: auto;
+	border: none;
+	border-bottom: 1px solid #E7E7E7;
+}
+
+.input_box_left{
+	width: 25%;
+	height: 0.7rem;
+	background: #FFFFFF;
+	float: left;
+	line-height: 0.7rem;
+	font-size: 0.26rem;
+	color: #323232;
+	border: none;
+}
+
+.input_box_right{
+	width: 75%;
+	height: 0.7rem;
+	background: #FFFFFF;
+	float: left;
+	border: none;
+}
+
+#phone_number,#cord_number{
+	width: 100%;
+	height: 0.7rem;
+	border: none;
+	font-size: 0.26rem;
+	outline: none;
+}
+
+#res_btn{
+	width: 100%;
+	height: 0.7rem;
+	border-radius: 3rem;
+	border: none;
+	background: #5497fa;
+	font-size: 0.34rem;
+	color: #FFFFFF;
+}
+
+.btn_sm{
+	border: none;
+	text-align: center;
+}
+
+.input_box p{
+	color: #323232;
+	font-size: 0.22rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+}
+
+.input_box p>img{
+	width: 0.3rem;
+}
+
+.input_box p>a{
+	color: #5497fa;
+}
+
+
+.forget_box{
+	width: 46%;
+	height: 0.3rem;
+	margin: auto;
+	margin-top: 2rem;
+	font-size: 0.24rem;
+}
+
+.forget_box a{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 0.26;
+	line-height: 100%;
+	text-align: center;
+	color: #989898;
+}
+
+.forget_box a:first-child{
+	border-right: 1px solid #989898;
+	width: 49%;
+}
+
+.line_gray{
+	width: 100%;
+	height: 1px;
+	background: #e7e7e7;
+	margin-top: 0.3rem;
+}
+
+.three_box{
+	width: 36%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background: #FFFFFF;
+	font-size: 0.2rem;
+	color: #989898;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: -0.25rem;
+}
+
+.wechat_sign{
+	width: 40%;
+	height: 1.2rem;
+	text-align: center;
+	margin: auto;
+}
+
+.wechat_sign img{
+	width: 0.8rem;
+}
+
+.wechat_sign a>p{
+	font-size: 0.24rem;
+	color: #10cc17;
+	margin-top: 0.1rem;	
+}
+
+
+/*忘记密码-----------------------------------*/
+
+.top_ding{
+	margin-top: 0.88rem;
+	float: left;
+}
+
+.en_title{
+	color: #646464;
+	font-size: 0.2rem;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	margin-top: 0.3rem;
+}
+
+.phone{
+	width: 100%;
+	height: 0.5rem;
+	color: #323232;
+	font-size: 0.36rem;
+	line-height: 0.5rem;
+	text-align: center;
+	margin-top: 0.1rem;
+}
+
+.time{
+	color: #989898;
+	font-size: 0.2rem;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	margin-top: 0.1rem;	
+}
+
+.reg_position{
+	width: 100%;
+	position: absolute;
+	bottom: 0.2rem;
+}
+
+.reg_input{
+	width: 50%;
+}
+
+.reg_input_acq{
+	float: left;
+	width: 25%;
+}
+
+.reg_input_acq input{
+	width: 100%;
+	height: 0.5rem;
+	margin-top: 0.1rem;
+	border-radius: 3rem;
+	background: #5497fa;
+	font-size: 0.2rem;
+	border: none;
+	color: #FFFFFF;
+}
+
+.for_sign{
+	text-align: left;
+}
+
+/*alert-------------------------------*/
+.bg_black{
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+
+.alert_box{
+	width: 60%;
+	height: 1.9rem;
+	background: #FFFFFF;
+	position: absolute;
+	top: 3.5rem;
+	left: 1.3rem;
+	z-index: 9999;
+	border-radius: 0.1rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.alert_box p{
+	width: 88%;
+	height: 0.7rem;
+	margin: auto;
+	margin-top: 0.2rem;
+	font-size: 0.26rem;
+	line-height: 0.35rem;
+	color: #323232;
+}
+
+.hx{
+	width: 100%;
+	height: 1px;
+	background: #E7E7E7;
+	margin-top: 0.2rem;
+}
+
+.alert_btn{
+	width: 100%;
+	height: 0.8rem;
+}
+
+#qx,#reg{
+	width: 50%;
+	float: left;
+	height: 0.8rem;
+	border-radius: 0px;
+	border: none;
+	background: #FFFFFF;
+	font-size: 0.28rem;
+}
+
+#qx{
+	border-right: 1px solid #E7E7E7;
+}
+
+#reg{
+	display: block;
+	line-height: 0.8rem;
+	color: #5497fa;
+}
+
+
