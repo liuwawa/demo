@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的订单</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-panel:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px}
+	  .weui-navbar{background:#fff;border-bottom:1px solid #fff;}
+	  .weui-navbar__item:after{border-right:0px}
+	  .weui-navbar__item.weui-bar__item--on{background:#fff;border-bottom:1px solid #f3ad11;color:#f3ad11}
+	  .weui-panel_access{border-top:8px solid #e5e5e5}
+	 .weui-cell__bd{text-align:right;padding-right:15px;padding-bottom:15px}
+	 .weui-cell_link .weui-cell__bd{text-align:left;padding-bottom:0px;font-size:15px;}
+	 .weui-cell__bd span{color:#f30}
+	 .weui-cell__ft{float:right;font-size:14px;}
+	 .weui-media-box{padding:2px 15px}
+	 .weui-cell__bd a{color:#f3ad11;border:1px solid #f3ad11;float:left;margin-top:2px;font-size:13px;border-radius:5px;display:block;width:70px;height:20px;text-align:center;margin-left:85px;}
+	.weui-media-box{padding:0px 15px 15px}
+	  .weui-cell__bd{color:#333}
+	.weui-media-box__desc-tech{padding:0px 15px;color:#999;font-size:14px;}
+	.weui-cell__ft{color:#f3ad11}
+	.tech-s{color:#1296db}
+   </style>
+  </head>
+
+  <body ontouchstart>
+	<div class="page__pd">
+	<div class="weui-tab">
+      <div class="weui-navbar">
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+          待使用
+        </a>
+        <a class="weui-navbar__item" href="#tab2">
+          已使用
+        </a>
+        <a class="weui-navbar__item" href="#tab3">
+          评价
+        </a>
+      </div>
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+          <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			<div class="weui-panel__bd">
+			 <a href="order-detail.html" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt="">
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title"><span class="weui-cell__ft">x1</span>种物质组成的巨型球状天</h4>
+				  <p class="weui-media-box__desc">车牌：粤A12312<br>时间：2018-11-10</p>
+				  <p style="font-size:14px;color:#30af08">支付方式：微信</p>
+				</div>
+			  </a>
+			  <div class="weui-cell__bd"><a href="appoint-good.html">预约使用</a>实付款：<span>￥897</span></div>
+			</div>
+		  </div>
+		  
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			<div class="weui-panel__bd">
+			 <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt="">
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title"><span class="weui-cell__ft">x1</span>种物质组成的巨型球状天</h4>
+				  <p class="weui-media-box__desc">车牌：粤A12312<br>时间：2018-11-10</p>
+				  <p style="font-size:14px;color:#30af08">支付方式：微信</p>
+				</div>
+			  </a>
+			  <div class="weui-cell__bd"><a href="appoint-good.html">预约使用</a>实付款：<span>￥897</span></div>
+			</div>
+		  </div>
+		  
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			<div class="weui-panel__bd">
+			 <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt="">
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title"><span class="weui-cell__ft">x1</span>种物质组成的巨型球状天</h4>
+				  <p class="weui-media-box__desc">车牌：粤A12312<br>时间：2018-11-10</p>
+				  <p style="font-size:14px;color:#30af08">支付方式：微信</p>
+				</div>
+			  </a>
+			  <div class="weui-cell__bd"><a href="appoint-good.html">预约使用</a>实付款：<span>￥897</span></div>
+			</div>
+		  </div>
+		  
+		  
+        </div>
+        <div id="tab2" class="weui-tab__bd-item">
+          
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			<div class="weui-panel__bd">
+			 <a href="order-detail-ok.html" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt="">
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title"><span class="weui-cell__ft">x1</span>种物质组成的巨型球状天</h4>
+				  <p class="weui-media-box__desc">车牌：粤A12312<br>时间：2018-11-10</p>
+				  <p style="font-size:14px;color:#30af08">支付方式：微信</p>
+				</div>
+			  </a>
+			  <div class="weui-cell__bd"><a href="commont-good.html">立即点评</a>实付款：<span>￥897</span></div>
+			</div>
+		  </div>
+		  
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			<div class="weui-panel__bd">
+			 <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+				<div class="weui-media-box__hd">
+				  <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt="">
+				</div>
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title"><span class="weui-cell__ft">x1</span>种物质组成的巨型球状天</h4>
+				  <p class="weui-media-box__desc">车牌：粤A12312<br>时间：2018-11-10</p>
+				  <p style="font-size:14px;color:#30af08">支付方式：微信</p>
+				</div>
+			  </a>
+			  <div class="weui-cell__bd"><a href="commont-good.html">立即点评</a>实付款：<span>￥897</span></div>
+			</div>
+		  </div>
+		  
+		  
+        </div>
+        <div id="tab3" class="weui-tab__bd-item">
+          <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+			  <a href="commont-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/1-7.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+				<span class="weui-cell__ft">已点评</span>
+			  </a>    
+			</div>
+			<div class="weui-panel__bd">
+			  <div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务质量：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务速度：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">门店环境：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务价格：5星</p>
+			  
+			  </div>
+			</div>
+			<div class="weui-panel__ft">
+			  <a href="commont-tech.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/st-3.png" style="float:left;margin-right:5px;width:22px" alt="">刘师傅</div>
+				<span class="weui-cell__ft tech-s">已点评</span>
+			  </a> 
+				<p class="weui-media-box__desc-tech">师傅很专业，服务质量很好</p>				  
+			</div>
+		  </div>
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+			  <a href="commont-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/1-7.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+				<span class="weui-cell__ft">已点评</span>
+			  </a>    
+			</div>
+			<div class="weui-panel__bd">
+			  <div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务质量：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务速度：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">门店环境：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务价格：5星</p>
+			  
+			  </div>
+			</div>
+			<div class="weui-panel__ft">
+			  <a href="commont-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/st-3.png" style="float:left;margin-right:5px;width:22px" alt="">刘师傅</div>
+				<span class="weui-cell__ft tech-s">已点评</span>
+			  </a> 
+			<p class="weui-media-box__desc-tech">师傅很专业，服务质量很好</p>				  
+			</div>
+		  </div>
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+			  <a href="commont-tech.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/1-7.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+				<span class="weui-cell__ft">已点评</span>
+			  </a>    
+			</div>
+			<div class="weui-panel__bd">
+			  <div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务质量：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务速度：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">门店环境：5星</p>
+				<p class="weui-media-box__desc"><img src="images/start.png" style="margin-right:11px;width:15px" alt="">服务价格：5星</p>
+				
+			  </div>
+			</div>
+			<div class="weui-panel__ft">
+			  <a href="commont-tech.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/st-3.png" style="float:left;margin-right:5px;width:22px" alt="">刘师傅</div>
+				<span class="weui-cell__ft tech-s">已点评</span>
+			  </a>
+				<p class="weui-media-box__desc-tech">师傅很专业，服务质量很好</p>			  
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+	
+	  
+	</div>
+	<div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab2.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="service.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab6.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">服务</p>
+        </a>
+		<!--连锁-->
+		<a href="store.html" class="weui-tabbar__item weui-tabbar__item-index ">
+          <div class="weui-tabbar__icon" style="height:50px;width:50px;margin-top:-23px;">
+            <img src="images/store_1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">门店</p>
+        </a>
+		<!--连锁-->
+        <a href="qanda.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="myinfo.html" class="weui-tabbar__item weui-tabbar__item-index weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab8.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+      </div>
+  
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+    
+  </body>
+
+</html>

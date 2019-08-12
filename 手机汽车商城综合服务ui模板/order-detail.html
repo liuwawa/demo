@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>订单详情</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px}
+	  .lists-prices{font-size:16px;color:#f30;float:left;width:100%}
+	.lists-prices span{text-decoration:line-through;font-size:14px;color:#666}
+	.sell-num{float:right;font-size:12px;color:#888;}
+	.weui-article-txt{padding:5px 15px 30px;}
+	.weui-article-txt h3{margin:0px;font-size:18px;}
+	.weui-panel__hd-title{border-top:8px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
+	.weui-flex-top .placeholder {
+    margin: 5px;
+    padding: 0 10px;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    color: #333;
+}
+.weui-flex-list .placeholder {
+    margin: 5 0px;
+    padding: 0px;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+	font-size:14px;
+    color: #555;
+}
+.weui-cell{padding:6px 15px 8px;}
+.weui-btn_primary{position:fixed;bottom:0;left:0px;background:#f3ad11;width:100%;border-radius:0px;z-index:9999}
+    </style>
+  </head>
+
+  <body ontouchstart>
+	<div class="page__pd">
+
+		<div class="weui-panel__hd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">适用门店：潘潘豪华车专修连锁</div>
+			
+         <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="images/iPhone-001.png" alt=""></div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title">种物质组成的巨型球状天</h4>
+              <p class="weui-media-box__desc">￥299</p>
+            </div>
+          </a>
+
+	<!--支付方式-->
+		<div class="weui-panel__hd weui-panel__hd-title">购买信息</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>用户</p>
+			</div>
+			<div class="weui-cell__ft">车主</div>
+		</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>车牌</p>
+			</div>
+			<div class="weui-cell__ft">粤A12312</div>
+		</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>微信支付</p>
+			</div>
+			<div class="weui-cell__ft" style="color:#f30">30000</div>
+		</div>
+
+		<!--支付方式-->
+		
+		<!--会员卡-->
+		<div class="weui-panel__hd weui-panel__hd-title">产品信息</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>有效期</p>
+			</div>
+			<div class="weui-cell__ft">365天</div>
+		</div>
+		<!--会员卡-->
+		<!--商品-->
+		<div class="weui-panel__hd weui-panel__hd-title" style="color:#f3ad11">包含内容</div>
+		<div class="weui-flex weui-flex-top">
+		  <div class="weui-flex__item"><div class="placeholder">名称</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">金额</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">数量</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">精致洗车</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥30</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">12</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">小保养保养</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥299</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">1</div></div>
+		</div>
+		<div class="weui-panel__hd weui-panel__hd-title" style="color:#f00">已使用</div>
+		<div class="weui-flex weui-flex-top">
+		  <div class="weui-flex__item"><div class="placeholder">名称</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">金额</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">数量</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">精致洗车</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥30</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">6</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">小保养保养</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥299</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">1</div></div>
+		</div>
+	</div>
+	
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+<div style="height:60px;width:100%"></div>
+<a href="appoint-good.html" class="weui-btn weui-btn_primary">预约使用</a>
+
+	   
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.js"></script>
+ 
+   
+
+  </body>
+
+</html>

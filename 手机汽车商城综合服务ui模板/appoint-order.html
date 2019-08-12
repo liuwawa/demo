@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>预约列表</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px;padding:2px 0px 15px}
+	  .weui-media-box{padding:0px 15px 15px}
+	  .weui-cell__bd{color:#333}
+	 .weui-panel_access{margin-bottom: 10px;
+    border-radius: 2px;
+    background: #ffffff;
+    padding: 15px 15px 10px 15px;
+    box-shadow: 0 1px 16px 0 rgba(0,0,0,.1)}
+	.weui-cell__ft{color:#f3ad11}
+	.weui-navbar{background:#fff;border-bottom:1px solid #fff;}
+	  .weui-navbar__item:after{border-right:0px}
+	  .weui-navbar__item.weui-bar__item--on{background:#fff;border-bottom:1px solid #f3ad11;color:#f3ad11}
+    </style>
+  </head>
+
+  <body style="background:#e5e5e5" ontouchstart>
+	<div class="page__pd">
+	<div class="weui-tab">
+      <div class="weui-navbar">
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+          待接待
+        </a>
+        <a class="weui-navbar__item" href="#tab2">
+          已接待
+        </a>
+       
+      </div>
+	  <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+		<div class="weui-panel weui-panel_access">
+        <div class="weui-panel__ft">
+          <a href="appoint-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+            <div class="weui-cell__bd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+            <span class="weui-cell__ft">未接待</span>
+          </a>    
+        </div>
+        <div class="weui-panel__bd">
+          <div class="weui-media-box weui-media-box_text">
+            <p class="weui-media-box__desc"><img src="images/icon_nav_icons.png" style="margin-right:11px;width:15px" alt="">服务时间：2018-11-10</p>
+			<p class="weui-media-box__desc"><img src="images/store_03.png" style="margin-right:11px;width:15px" alt="">服务车牌：粤A12312</p>
+            <p class="weui-media-box__desc"><img src="images/icon_nav_panel.png" style="margin-right:11px;width:15px" alt="">服务内容：洗车、保养、维修</p>
+          </div>
+        </div>
+      </div>
+	  <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__ft">
+          <a href="appoint-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+            <div class="weui-cell__bd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+            <span class="weui-cell__ft">未接待</span>
+          </a>    
+        </div>
+        <div class="weui-panel__bd">
+          <div class="weui-media-box weui-media-box_text">
+            <p class="weui-media-box__desc"><img src="images/icon_nav_icons.png" style="margin-right:11px;width:15px" alt="">服务时间：2018-11-10</p>
+			<p class="weui-media-box__desc"><img src="images/store_03.png" style="margin-right:11px;width:15px" alt="">服务车牌：粤A12312</p>
+            <p class="weui-media-box__desc"><img src="images/icon_nav_panel.png" style="margin-right:11px;width:15px" alt="">服务内容：洗车、保养、维修</p>
+          </div>
+        </div>
+      </div>
+	  <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__ft">
+          <a href="appoint-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+            <div class="weui-cell__bd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+            <span class="weui-cell__ft">未接待</span>
+          </a>    
+        </div>
+        <div class="weui-panel__bd">
+          <div class="weui-media-box weui-media-box_text">
+            <p class="weui-media-box__desc"><img src="images/icon_nav_icons.png" style="margin-right:11px;width:15px" alt="">服务时间：2018-11-10</p>
+			<p class="weui-media-box__desc"><img src="images/store_03.png" style="margin-right:11px;width:15px" alt="">服务车牌：粤A12312</p>
+            <p class="weui-media-box__desc"><img src="images/icon_nav_panel.png" style="margin-right:11px;width:15px" alt="">服务内容：洗车、保养、维修</p>
+          </div>
+        </div>
+      </div>
+	   </div>
+	   <div id="tab2" class="weui-tab__bd-item">
+          <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+			  <a href="appoint-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+				<span class="weui-cell__ft">已接待</span>
+			  </a>    
+			</div>
+			<div class="weui-panel__bd">
+			  <div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc"><img src="images/icon_nav_icons.png" style="margin-right:11px;width:15px" alt="">服务时间：2018-11-10</p>
+				<p class="weui-media-box__desc"><img src="images/store_03.png" style="margin-right:11px;width:15px" alt="">服务车牌：粤A12312</p>
+				<p class="weui-media-box__desc"><img src="images/icon_nav_panel.png" style="margin-right:11px;width:15px" alt="">服务内容：洗车、保养、维修</p>
+			  </div>
+			</div>
+		  </div>
+		  <div class="weui-panel weui-panel_access">
+			<div class="weui-panel__ft">
+			  <a href="appoint-detail.html" class="weui-cell weui-cell_access weui-cell_link">
+				<div class="weui-cell__bd"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">哗哗豪华车连锁</div>
+				<span class="weui-cell__ft">已接待</span>
+			  </a>    
+			</div>
+			<div class="weui-panel__bd">
+			  <div class="weui-media-box weui-media-box_text">
+				<p class="weui-media-box__desc"><img src="images/icon_nav_icons.png" style="margin-right:11px;width:15px" alt="">服务时间：2018-11-10</p>
+				<p class="weui-media-box__desc"><img src="images/store_03.png" style="margin-right:11px;width:15px" alt="">服务车牌：粤A12312</p>
+				<p class="weui-media-box__desc"><img src="images/icon_nav_panel.png" style="margin-right:11px;width:15px" alt="">服务内容：洗车、保养、维修</p>
+			  </div>
+			</div>
+		  </div>
+        </div>
+      </div>
+    </div>
+	  
+	  
+	</div>
+	<div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab2.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="service.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab6.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">服务</p>
+        </a>
+		<!--连锁-->
+		<a href="store.html" class="weui-tabbar__item weui-tabbar__item-index ">
+          <div class="weui-tabbar__icon" style="height:50px;width:50px;margin-top:-23px;">
+            <img src="images/store_1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">门店</p>
+        </a>
+		<!--连锁-->
+        <a href="qanda.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="myinfo.html" class="weui-tabbar__item weui-tabbar__item-index weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab8.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+      </div>
+  
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+   
+  </body>
+
+</html>

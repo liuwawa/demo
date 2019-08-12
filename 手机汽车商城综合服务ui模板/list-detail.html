@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12次洗车卡详情</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px}
+	  .lists-prices{font-size:16px;color:#f30;float:left;width:100%}
+	.lists-prices span{text-decoration:line-through;font-size:14px;color:#666}
+	.sell-num{float:right;font-size:12px;color:#888;}
+	.weui-article-txt{padding:5px 15px 30px;}
+	.weui-article-txt h3{margin:0px;font-size:18px;}
+	.weui-panel__hd-title{border-top:8px solid #e5e5e5;border-bottom:1px solid #e5e5e5}
+	.weui-flex-top .placeholder {
+    margin: 5px;
+    padding: 0 10px;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+    color: #333;
+}
+.weui-flex-list .placeholder {
+    margin: 5 0px;
+    padding: 0px;
+    height: 2.3em;
+    line-height: 2.3em;
+    text-align: center;
+	font-size:14px;
+    color: #555;
+}
+.weui-cell{padding:6px 15px 8px;}
+.weui-tabbar__item{font-size:18px;text-align:center;line-height:50px;color:#fff;background:#f3ad11}
+.weui-tabbar__item-lists{background:#F30}
+    </style>
+  </head>
+
+  <body ontouchstart>
+	<div class="page__pd">
+	<div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+	  
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/swiper-1.jpg" /></div>
+        <div class="swiper-slide"><img src="images/swiper-2.jpg" /></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+	<article class="weui-article weui-article-txt">
+          <h3>12次洗车卡</h3>
+          <p class="lists-prices">
+          <i class="sell-num">已售10件</i><span>￥399</span>&nbsp;￥299
+          </p>
+	</article>
+		<!--会员卡-->
+		<div class="weui-panel__hd weui-panel__hd-title">卡片信息</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>赠送余额</p>
+			</div>
+			<div class="weui-cell__ft">30000</div>
+		</div>
+		<div class="weui-cell">
+			<div class="weui-cell__bd">
+				  <p>有效期</p>
+			</div>
+			<div class="weui-cell__ft">365天</div>
+		</div>
+		<!--会员卡-->
+		<!--商品-->
+		<div class="weui-panel__hd weui-panel__hd-title">包含信息</div>
+		<div class="weui-flex weui-flex-top">
+		  <div class="weui-flex__item"><div class="placeholder">名称</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">金额</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">数量</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">精致洗车</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥30</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">12</div></div>
+		</div>
+		<div class="weui-flex weui-flex-list">
+		  <div class="weui-flex__item"><div class="placeholder">小保养保养</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">￥299</div></div>
+		  <div class="weui-flex__item"><div class="placeholder">1</div></div>
+		</div>
+		<!--商品-->
+		<div class="weui-panel__hd weui-panel__hd-title">商品详情</div>
+		<article class="weui-article">
+      <h1>大标题</h1>
+      <section>
+        <h2 class="title">章标题</h2>
+        <section>
+          <h3>1.1 节标题</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p>
+            <img src="./images/pic_article.png" alt="">
+            <img src="./images/pic_article.png" alt="">
+          </p>
+        </section>
+        <section>
+          <h3>1.2 节标题</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+      </section>
+    </article>
+	</div>
+	
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:history.back()" class="weui-tabbar__item">
+         返回
+        </a>
+        <a href="order.html" class="weui-tabbar__item weui-tabbar__item-lists">
+         立即购买
+        </a>
+      </div>
+
+	   
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.js"></script>
+ 
+    <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 3000
+      });
+	  $(".t_news").swiper({
+        loop: true,
+        autoplay: 5000
+      });
+    </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新增车辆</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.weui-check__label{color:#666}
+.weui-btn_primary{position:fixed;bottom:0;left:0px;background:#f3ad11;width:100%;border-radius:0px;}
+.weui-label span{color:#f00}
+.weui-cells__title{font-size:16px}
+.scancar{width:26px}
+</style>
+  </head>
+
+  <body style="background:#e6e6e6" ontouchstart>
+ 
+    <div class="weui-cells weui-cells_form" style="margin-top:0px;">
+	<div class="weui-cells__title">车辆信息</div>
+      <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">车牌号<span>*<span></label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input carno" type="text" placeholder="请输入车牌号">
+        </div>
+		<a class="weui-cell__ft"><img class="scancar" src="images/scan.png" /></a>
+      </div>
+	 
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">车架号</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input vin" type="text"  placeholder="请输入车架号">
+        </div>
+		<a class="weui-cell__ft"><img class="scancar" src="images/scan.png" /></a>
+      </div>
+	  
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">发动机号</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input vin" type="text"  placeholder="请输入发动机号">
+        </div>
+      </div>
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="name" class="weui-label">品牌车型</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input brand" id="brand" type="text" placeholder="请选择品牌车型">
+        </div>
+      </div>
+	  
+	   <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">注册时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input registertime" type="date" value="">
+        </div>
+      </div>
+	  <div class="weui-cells__title">商业险</div>
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">到期时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input endtime1" type="date" value="">
+        </div>
+      </div>
+	    
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="name" class="weui-label">承保公司</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="baoxian" type="text" value="">
+        </div>
+      </div>
+	  
+	  <div class="weui-cells__title">交强险</div>
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">到期时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input endtime2" type="date" value="">
+        </div>
+      </div>
+	    
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="name" class="weui-label">承保公司</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="baoxian1" type="text" value="">
+        </div>
+      </div>
+	  
+</div>
+
+<div style="height:90px;width:100%"></div>
+<a href="javascript:;" class="weui-btn weui-btn_primary">确认新增</a>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+  $("#baoxian").select({
+        title: "选择商业险承保公司",
+        items: ["平安车辆保险","中国人保车辆保险","太平洋车辆保险", "中华联合车辆保险", "大地车辆保险", "天安车辆保险", "永安车辆保险", "阳光车辆保险", "安邦车辆保险", "太平车辆保险"
+		, "都邦车辆保险", "永城车辆保险", "华泰车辆保险", "渤海车辆保险", "大众车辆保险", "天平车辆保险", "民安车辆保险", "华安车辆保险", "安诚车辆保险", "安联车辆保险", "中银车辆保险"
+		, "鼎和车辆保险", "国寿财车辆保险", "中华车辆保险", "紫金车辆保险", "信达车辆保险", "人寿车辆保险", "中国人民财产保险", "利宝保险有限公司", "浙商财产保险股份有限公司", "合从人寿保险股份有限公司"],
+        onChange: function(d) {
+          console.log(this, d);
+        },
+        onClose: function() {
+          console.log("close");
+        },
+        onOpen: function() {
+          console.log("open");
+        },
+      });
+	$("#baoxian1").select({
+        title: "选择交强险承保公司",
+        items: ["平安车辆保险","中国人保车辆保险","太平洋车辆保险", "中华联合车辆保险", "大地车辆保险", "天安车辆保险", "永安车辆保险", "阳光车辆保险", "安邦车辆保险", "太平车辆保险"
+		, "都邦车辆保险", "永城车辆保险", "华泰车辆保险", "渤海车辆保险", "大众车辆保险", "天平车辆保险", "民安车辆保险", "华安车辆保险", "安诚车辆保险", "安联车辆保险", "中银车辆保险"
+		, "鼎和车辆保险", "国寿财车辆保险", "中华车辆保险", "紫金车辆保险", "信达车辆保险", "人寿车辆保险", "中国人民财产保险", "利宝保险有限公司", "浙商财产保险股份有限公司", "合从人寿保险股份有限公司"],
+        onChange: function(d) {
+          console.log(this, d);
+        },
+        onClose: function() {
+          console.log("close");
+        },
+        onOpen: function() {
+          console.log("open");
+        },
+      });
+</script>
+<script src="js/jquery-weui.js"></script>
+  </body>
+</html>

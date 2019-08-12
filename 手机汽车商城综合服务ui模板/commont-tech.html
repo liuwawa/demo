@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>技师点评</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.weui-tabbar__item{font-size:18px;text-align:center;line-height:50px;color:#fff;background:#f3ad11}
+.weui-tabbar__item-lists{background:#F30}
+.page__pd{padding-bottom:15px;background:#fff}
+.main {
+    width: 100%;
+    margin: 0.2rem auto;
+    background: #FFFFFF;
+}
+.main span {
+    line-height: 32px;
+	float:left;
+	font-size:16px
+}
+.main-wrap{
+	padding: 0rem 0 0.1rem 0.5rem;
+}
+ .mydiv {
+    display: inline-block;
+}
+.main ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+.star_ul li {
+    margin-right: 0.4rem;
+    float: left;
+}
+.star_ul img {
+    width: 1rem;
+    height:1rem;
+    vertical-align: text-bottom;
+	margin-top:5px;
+}
+.weui-cell{padding-top:5px}
+</style>
+  </head>
+  <body style="background:#e5e5e5" ontouchstart>
+  <div class="page__pd">
+  <div class="weui-cells__title" style="font-size:16px;color:#f3ad11;line-height:32px;;text-align:center;margin-top:0px">评分</div>
+  <section class="main">
+			<div class="main-wrap">
+				<span class="revtit">服务态度：</span>
+				<div id="mydiv1" currentindex="4" class="mydiv">
+	    			<ul class="star_ul">
+				        <li num="1"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="2"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="3"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="4"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="5"><img src="images/star_empty.png" class="xing_hui"></li>
+			   		</ul>
+				</div>
+			</div>
+			
+			<div class="main-wrap">
+				<span class="revtit">维修技术：</span>
+				<div id="mydiv2" currentindex="3" class="mydiv">
+	    			<ul class="star_ul">
+				        <li num="1"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="2"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="3"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="4"><img src="images/star_empty.png" class="xing_hui"></li>
+				        <li num="5"><img src="images/star_empty.png" class="xing_hui"></li>
+			   		</ul>
+				</div>
+			</div>
+		
+			<div class="main-wrap">
+				<span class="revtit">专业知识：</span>
+				<div id="mydiv3" currentindex="5" class="mydiv">
+	    			<ul class="star_ul">
+				        <li num="1"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="2"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="3"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="4"><img src="images/star_full.png" class="xing_hui"></li>
+				        <li num="5"><img src="images/star_full.png" class="xing_hui"></li>
+			   		</ul>
+				</div>
+			</div>
+	</section>
+
+		  <div class="weui-cells__title">我的备注</div>
+			<div class="weui-cells weui-cells_form">
+			  <div class="weui-cell">
+				<div class="weui-cell__bd">
+				  <textarea class="weui-textarea" placeholder="请输入备注（选填）" rows="3"></textarea>
+				  <div class="weui-textarea-counter"><span>0</span>/200</div>
+				</div>
+			  </div>
+			</div>
+		<div class="weui-cell weui-cell_vcode">
+			<div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="number" placeholder="请输入验证码">
+			</div>
+			<div class="weui-cell__ft">
+			  <img class="weui-vcode-img" src="./images/vcode.jpg">
+			</div>
+		  </div>
+</div>
+<div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:history.back()" class="weui-tabbar__item">
+         先不点评
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item weui-tabbar__item-lists">
+         确认提交
+        </a>
+      </div>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+
+<script src="js/jquery-weui.js"></script>
+<script type="text/javascript">
+        function change(mydivid,num) {
+         
+                var tds = $("#"+mydivid+" ul li");
+                for (var i = 0; i < num; i++) {
+                    var td = tds[i];
+                    $(td).find("img").attr("src","images/star_full.png");
+                }
+                var tindex = $("#"+mydivid).attr("currentIndex");
+                tindex = tindex==0?0:tindex+1;
+                for (var j = num; j < tindex; j++) {
+                    var td = tds[j];
+                    $(td).find("img").attr("src","images/star_empty.png");
+                }
+                $("#"+mydivid).attr("currentIndex",num);
+   
+        }
+        $(function(){
+            initEvent('mydiv1');
+            initEvent('mydiv2');
+            initEvent('mydiv3');
+        });
+        function initEvent(mydivid) {
+            var tds = $("#"+mydivid+" ul li");
+            for (var i = 0; i < tds.length; i++) {
+                var td = tds[i];
+                $(td).click(function(){var num = $(this).attr("num");change(mydivid,num);});
+            }
+        }
+
+		</script>
+  </body>
+
+</html>

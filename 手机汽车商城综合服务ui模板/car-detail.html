@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>车辆信息</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.weui-check__label{color:#666}
+.weui-btn_primary{position:fixed;bottom:0;left:0px;background:#f3ad11;width:100%;border-radius:0px;}
+.weui-label span{color:#f00}
+.weui-cells__title{font-size:16px;margin-top:0px;}
+.weui-media-box__title-check{border-bottom:1px solid #efefef}
+.weui-tab{margin-top:10px;background:#fff}
+.weui-navbar{background:none;}
+.weui-navbar__item:after{border:none}
+.weui-navbar__item.weui-bar__item--on{background:none;color:#f3ad11}
+.weui-media-box__title-price{color:#d81e06}
+.weui-media-box_appmsg .weui-media-box__hd-time{background:#1296db;color:#fff;line-height:12px;border-radius:30px;font-size:10px;height:24px;padding:8px 0px;width:40px;}
+.weui-media-box__desc-consune p{line-height:20px;}
+.weui-media-box__desc-check p{line-height:20px;}
+.weui-input{color:#666}
+.jieban{float:right;color:#f3ad11;border:1px solid #f3ad11;padding:2px 5px;font-size:12px;border-radius:6px;margin-top:3px}
+.sex-picture{width:16px;}
+.weui-media-box_appmsg-check{border-top:10px solid #e5e5e5}
+.edit-car{float:right;width:18px;}
+</style>
+  </head>
+
+  <body style="background:#e5e5e5" ontouchstart>
+	<div class="page__bd">
+      <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__bd">
+          <a href="edit-car.html" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="images/1.png" alt="">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title"><img class="edit-car" src="images/edits.png" />粤A12312</h4>
+              <p class="weui-media-box__desc">品牌车型：奔驰C200</p>
+            </div>
+          </a>
+          
+        </div>
+	</div>
+	<div class="weui-flex" style="background:#fff;padding-bottom:5px">
+      <div class="weui-flex__item">
+		<a class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+           <img src="images/set.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">配置详情</p>
+        </a>
+	 </div>
+      <div class="weui-flex__item">
+	  <a class="weui-tabbar__item">
+          <div class="weui-tabbar__icon">
+            <img src="images/book.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">智能保养</p>
+        </a>
+	  </div>
+    </div>
+</div>
+<div class="weui-tab">
+      <div class="weui-navbar">
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+          车辆信息
+        </a>
+        <a class="weui-navbar__item" href="#tab2">
+          消费记录
+        </a>
+        <a class="weui-navbar__item" href="#tab3">
+          检车记录
+        </a>
+		
+      </div>
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+         
+	 
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">车架号</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input vin" type="text" readonly  value="V123123123">
+        </div>
+		
+      </div>
+	  
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">发动机号</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input vin" type="text" readonly  value="V123123123">
+        </div>
+      </div>
+	 
+	  
+	   <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">注册时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input registertime" type="date" readonly value="2018-11-12">
+        </div>
+      </div>
+	  <div class="weui-cells__title">商业险</div>
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">到期时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input endtime1" type="date" readonly value="2018-11-12">
+        </div>
+      </div>
+	    
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="name" class="weui-label">承保公司</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="baoxian" type="text" readonly value="太平洋车辆保险">
+        </div>
+      </div>
+	  
+	  <div class="weui-cells__title">交强险</div>
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="" class="weui-label">到期时间</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input endtime2" type="date" readonly value="2018-11-12">
+        </div>
+      </div>
+	    
+	  <div class="weui-cell">
+        <div class="weui-cell__hd"><label for="name" class="weui-label">承保公司</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" id="baoxian1" type="text" readonly value="2018-11-12">
+        </div>
+      </div>
+
+     </div>
+        <div id="tab2" class="weui-tab__bd-item">
+           <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__bd">
+          <a href="repair-order.html" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd weui-media-box__hd-time">2018<br />12-11</div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title weui-media-box__title-price">金额：￥5000</h4>
+              <div class="weui-media-box__desc weui-media-box__desc-consune">
+				<p style="font-size:13px;">进店里程：79434</p>
+				<p>服务：喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，</p>
+			  </div>
+				<ul class="weui-media-box__info">
+				  <li class="weui-media-box__info__meta">门店：潘潘豪华车专修连锁</li>
+				</ul>
+			</div>
+          </a>
+          <a href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd weui-media-box__hd-time">2018<br />12-11</div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title weui-media-box__title-price">金额：￥5000</h4>
+              <div class="weui-media-box__desc weui-media-box__desc-consune">
+				<p style="font-size:13px;">进店里程：79434</p>
+				<p>服务：喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，喷漆，</p>
+			  </div>
+				<ul class="weui-media-box__info">
+				  <li class="weui-media-box__info__meta">门店：潘潘豪华车专修连锁</li>
+				 
+				</ul>
+			</div>
+          </a>
+        </div>
+
+      </div>
+        </div>
+        <div id="tab3" class="weui-tab__bd-item" style="background:#e6e6e6">
+          <div class="weui-panel weui-panel_access">
+			<a href="check-info.html" class="weui-media-box weui-media-box_appmsg weui-media-box_appmsg-check">
+		   
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title weui-media-box__title-check">
+					2018-11-10
+					<span class="weui-media-box__title-after">检车时间</span>
+				  </h4>
+				  <div class="weui-media-box__desc weui-media-box__desc-check">
+				  <p><span style="color:#555">进店里程：</span>200</p>
+				  <p><span style="color:#555">检车结论：</span>检车结论检车结论检车结论检车结论检车结论检车结论检车结论检车结论</p>
+				  </div>
+				</div>
+				<div class="weui-cell__ft">></div>
+			  </a>
+			  
+        	<a href="check-info.html" class="weui-media-box weui-media-box_appmsg weui-media-box_appmsg-check">
+		   
+				<div class="weui-media-box__bd">
+				  <h4 class="weui-media-box__title weui-media-box__title-check">
+					2018-11-10
+					<span class="weui-media-box__title-after">检车时间</span>
+				  </h4>
+				  <div class="weui-media-box__desc weui-media-box__desc-check">
+				  <p><span style="color:#555">进店里程：</span>200</p>
+				  <p><span style="color:#555">检车结论：</span>检车结论检车结论检车结论检车结论检车结论检车结论检车结论检车结论</p>
+				  </div>
+				</div>
+				<div class="weui-cell__ft">></div>
+			  </a>
+
+      </div>
+        </div>
+		
+      </div>
+</div>
+<div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-tabbar__item-index weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="service.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab6.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">服务</p>
+        </a>
+		<!--连锁-->
+		<a href="store.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon" style="height:50px;width:50px;margin-top:-23px;">
+            <img src="images/store_1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">门店</p>
+        </a>
+		<!--连锁-->
+        <a href="qanda.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="myinfo.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab7.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+      </div>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script src="js/jquery-weui.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+	
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+  </body>
+</html>

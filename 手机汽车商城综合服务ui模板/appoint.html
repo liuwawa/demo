@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>立即预约</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px}
+	 .weui-tabbar__item{font-size:18px;text-align:center;line-height:50px;color:#fff;background:#f3ad11}
+.weui-tabbar__item-lists{background:#F30}
+
+.weui-btn_primary{position:fixed;bottom:0;left:0px;background:#f30;width:100%;border-radius:0px;}
+    </style>
+  </head>
+
+  <body ontouchstart>
+  <div class="forms-lists">
+	<div class="page__pd">
+		<div class="weui-cells__title"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">预约门店</div>
+		<div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">服务门店</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input shop_id" type="text" id="shopid" readonly  placeholder="请选择门店">
+        </div>
+      </div>
+	  <div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">服务车牌</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" id="carNo" type="text" value=""  placeholder="选择车牌" readonly="">
+				</div>
+		</div>
+		<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">师傅选择</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" id="tech" type="text" value=""  placeholder="选择师傅" readonly="">
+				</div>
+		</div>
+		<div class="weui-cells__title"><img src="images/store_07.png" style="float:left;margin-right:5px;width:22px" alt="">预约服务</div>
+			<div class="weui-cell">
+			<div class="weui-cell__hd"><label class="weui-label">服务</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="text" id="serviceid" readonly  placeholder="请选择服务">
+			</div>
+		  </div>
+	  
+		<div class="weui-cells__title"><img src="images/store_04.png" style="float:left;margin-right:5px;width:22px" alt="">个人信息</div>
+		<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">姓名</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input uname" type="text"  placeholder="请输入姓名">
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+				  <label class="weui-label">手机号</label>
+				</div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" type="tel" placeholder="请输入手机号">
+				</div>
+				
+			  </div>
+		<div class="weui-cell">
+			<div class="weui-cell__hd"><label for="" class="weui-label">服务时间</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="date" value="">
+			</div>
+		  </div>
+		  <div class="weui-cells__title">我的备注</div>
+			<div class="weui-cells weui-cells_form">
+			  <div class="weui-cell">
+				<div class="weui-cell__bd">
+				  <textarea class="weui-textarea" placeholder="请输入备注（选填）" rows="3"></textarea>
+				  <div class="weui-textarea-counter"><span>0</span>/200</div>
+				</div>
+			  </div>
+			</div>
+		<div class="weui-cell weui-cell_vcode">
+			<div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="number" placeholder="请输入验证码">
+			</div>
+			<div class="weui-cell__ft">
+			  <img class="weui-vcode-img" src="./images/vcode.jpg">
+			</div>
+		  </div>
+    </div>
+  <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:history.back()" class="weui-tabbar__item">
+         返回
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item weui-tabbar__item-lists">
+         立即预约
+        </a>
+    </div>
+</div>	  
+<div class="choose-service" >
+<ul class="cd-accordion-menu animated">
+
+	<li class="has-children">
+		<input type="checkbox" name ="group-1" id="group-1">
+		<label for="group-1">洗车服务</label>
+
+		<ul>
+			<li><a href="javascript:;" class="service_id services">标准洗车</a></li>
+			<li><a href="javascript:;" class="service_id">欧式洗车</a></li>
+		</ul>
+	</li>
+	<li class="has-children">
+		<input type="checkbox" name ="group-2" id="group-2">
+		<label for="group-2">美容服务</label>
+
+		<ul>
+			<li><a href="javascript:;" class="service_id">养护打蜡</a></li>
+			<li><a href="javascript:;" class="service_id">精细还原打蜡</a></li>
+			<li><a href="javascript:;" class="service_id">深度抛光打蜡</a></li>
+		</ul>
+	</li>
+	
+	<li class="has-children">
+		<input type="checkbox" name ="group-3" id="group-3">
+		<label for="group-3">维修</label>
+		<ul>
+			<li class="has-children">
+				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+				<label for="sub-group-1">车身系统</label>
+
+				<ul>
+					<li><a href="javascript:;" class="service_id">更换ABS泵</a></li>
+					<li><a href="javascript:;" class="service_id">更换ABS泵</a></li>
+					<li><a href="javascript:;" class="service_id">更换ABS泵</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+				<label for="sub-group-2">冷却系统</label>
+
+				<ul>
+					<li><a href="javascript:;" class="service_id">更换ABS泵</a></li>
+					<li><a href="javascript:;" class="service_id">更换ABS泵</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+
+	<li class="has-children">
+		<input type="checkbox" name ="group-4" id="group-4">
+		<label for="group-4">保养</label>
+
+		<ul>
+			<li class="has-children">
+				<input type="checkbox" name ="sub-group-3" id="sub-group-3">
+				<label for="sub-group-3">更换服务</label>
+
+				<ul>
+					<li><a href="javascript:;" class="service_id">更换机油</a></li>
+					<li><a href="javascript:;" class="service_id">更换机油</a></li>
+				</ul>
+			</li>
+			<li class="has-children">
+				<input type="checkbox" name ="sub-group-4" id="sub-group-4">
+				<label for="sub-group-4">更换服务</label>
+
+				<ul>
+					<li><a href="javascript:;" class="service_id">更换机油</a></li>
+					<li><a href="javascript:;" class="service_id">更换机油</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+<div style="height:90px;width:100%"></div>
+<a href="javascript:;" class="weui-btn weui-btn_primary">确认</a>
+</div>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+  
+  $(function() {
+	var accordionsMenu = $('.cd-accordion-menu');
+
+	if( accordionsMenu.length > 0 ) {
+		
+		accordionsMenu.each(function(){
+			var accordion = $(this);
+			accordion.on('change', 'input[type="checkbox"]', function(){
+				var checkbox = $(this);
+				console.log(checkbox.prop('checked'));
+				( checkbox.prop('checked') ) ? checkbox.siblings('ul').attr('style', 'display:none;').slideDown(300) : checkbox.siblings('ul').attr('style', 'display:block;').slideUp(300);
+			});
+		});
+	}
+});
+</script>
+<script src="js/jquery-weui.js"></script>
+
+	<script>
+	$("#tech").select({
+        title: "选择服务师傅",
+        items: ["门店安排","刘师傅","张师傅"],
+        onChange: function(d) {
+        },
+        onClose: function() {
+        },
+        onOpen: function() {
+        },
+      });
+	$("#shopid").select({
+        title: "选择服务门店",
+        items: ["潘潘豪华车专修连锁","大石门店专修"],
+        onChange: function(d) {
+        },
+        onClose: function() {
+        },
+        onOpen: function() {
+        },
+      });
+	</script>
+	<script>
+      $("#carNo").select({
+        title: "选择使用车辆",
+        items: ["新增车辆","粤A12312", "粤B12312" ],
+        onChange: function(d) {
+          console.log(this, d);
+        },
+        onClose: function(d) {
+		  if(d.data.values=='新增车辆'){
+			window.location.href="add-car.html";
+			return false;
+		  }
+          
+        },
+        onOpen: function() {
+          console.log("open");
+        },
+      });
+	  $('.service_id').click(function(){
+		var thats = $(this);
+		if(thats.hasClass('services')){
+			thats.removeClass('services');
+			return false;
+		}else{
+			thats.addClass('services');
+			return false;
+		}
+	  })
+	  $('#serviceid').unbind('click').click(function(){
+			$('.choose-service').fadeIn(1000);
+			$('.forms-lists').hide();
+		})
+	  $('.weui-btn_primary').click(function(){
+			$('.choose-service').hide();
+			$('.forms-lists').fadeIn(1000);
+	  })
+	  
+     $('.weui-tabbar__item-lists').click(function(){
+		$.showLoading();
+        setTimeout(function() {
+          $.hideLoading();
+		  window.location.href="msg2.html";
+        }, 3000)
+	 })
+    </script>
+  </body>
+
+</html>

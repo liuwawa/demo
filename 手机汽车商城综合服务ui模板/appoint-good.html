@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>预约服务</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px;padding-bottom:15px}
+	 .weui-tabbar__item{font-size:18px;text-align:center;line-height:50px;color:#fff;background:#f3ad11}
+.weui-tabbar__item-lists{background:#F30}
+.weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color:#f3ad11}
+.weui-btn_primary{position:fixed;bottom:0;left:0px;background:#f30;width:100%;border-radius:0px;}
+.weui-cell_swipeds {
+    display: block;
+    padding: 0;
+}
+    </style>
+  </head>
+
+  <body ontouchstart>
+  <div class="forms-lists">
+	<div class="page__pd">
+	<div class="weui-cells__title"><img src="images/store_07.png" style="float:left;margin-right:5px;width:22px" alt="">使用服务</div>
+		<div class="weui-cells">
+            <div class="weui-cell weui-cell_swipeds">
+              <div class="weui-cell__bd">
+                <div class="weui-cell">
+                  <div class="weui-cell__bd">
+                    <p>洗车</p>
+                  </div>
+                  <div class="weui-cell__ft">
+                    <span class="price">x12&nbsp;&nbsp;</span>
+                    <div class="weui-count">
+                      <a class="weui-count__btn weui-count__decrease"></a>
+                      <input class="weui-count__number" type="number" value="1" />
+                      <a class="weui-count__btn weui-count__increase"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="weui-cell weui-cell_swipeds">
+              <div class="weui-cell__bd">
+                <div class="weui-cell">
+                 <div class="weui-cell__bd">
+                    <p>更换机油</p>
+                  </div>
+                  <div class="weui-cell__ft">
+                    <span class="price">x1&nbsp;&nbsp;</span>
+                    <div class="weui-count">
+                      <a class="weui-count__btn weui-count__decrease"></a>
+                      <input class="weui-count__number" type="number" value="1" />
+                      <a class="weui-count__btn weui-count__increase"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+			<div class="weui-cell weui-cell_swipeds">
+              <div class="weui-cell__bd">
+                <div class="weui-cell">
+                 <div class="weui-cell__bd">
+                    <p>更换火花塞</p>
+                  </div>
+                  <div class="weui-cell__ft">
+                    <span class="price">x1&nbsp;&nbsp;</span>
+                    <div class="weui-count">
+                      <a class="weui-count__btn weui-count__decrease"></a>
+                      <input class="weui-count__number" type="number" value="1" />
+                      <a class="weui-count__btn weui-count__increase"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+		
+		<div class="weui-cells__title"><img src="images/store_icon.png" style="float:left;margin-right:5px;width:22px" alt="">服务门店</div>
+		<div class="weui-cell">
+        <div class="weui-cell__hd"><label class="weui-label">服务门店</label></div>
+        <div class="weui-cell__bd">
+          <input class="weui-input shop_id" type="text" id="shopid" value="潘潘豪华车专修连锁" readonly  >
+        </div>
+      </div>
+	  <div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">服务车牌</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" id="carNo" type="text" value=""  placeholder="选择车牌" readonly="">
+				</div>
+		</div>
+		<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">师傅选择</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" id="tech" type="text" value=""  placeholder="选择师傅" readonly="">
+				</div>
+		</div>
+	  
+		<div class="weui-cells__title"><img src="images/store_04.png" style="float:left;margin-right:5px;width:22px" alt="">个人信息</div>
+		<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input uname" type="text"  placeholder="请输入联系人姓名">
+				</div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+				  <label class="weui-label">联系手机</label>
+				</div>
+				<div class="weui-cell__bd">
+				  <input class="weui-input" type="tel" placeholder="请输入手机号">
+				</div>
+				
+			  </div>
+		<div class="weui-cell">
+			<div class="weui-cell__hd"><label for="" class="weui-label">服务时间</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="date" value="">
+			</div>
+		  </div>
+		  <div class="weui-cells__title">我的备注</div>
+			<div class="weui-cells weui-cells_form">
+			  <div class="weui-cell">
+				<div class="weui-cell__bd">
+				  <textarea class="weui-textarea" placeholder="请输入备注（选填）" rows="3"></textarea>
+				  <div class="weui-textarea-counter"><span>0</span>/200</div>
+				</div>
+			  </div>
+			</div>
+		<div class="weui-cell weui-cell_vcode">
+			<div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+			<div class="weui-cell__bd">
+			  <input class="weui-input" type="number" placeholder="请输入验证码">
+			</div>
+			<div class="weui-cell__ft">
+			  <img class="weui-vcode-img" src="./images/vcode.jpg">
+			</div>
+		  </div>
+    </div>
+  <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:history.back()" class="weui-tabbar__item">
+         返回
+        </a>
+        <a href="javascript:;" class="weui-tabbar__item weui-tabbar__item-lists">
+         立即预约
+        </a>
+    </div>
+</div>	  
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script>
+	$("#tech").select({
+        title: "选择服务师傅",
+        items: ["门店安排","刘师傅","张师傅"],
+        onChange: function(d) {
+        },
+        onClose: function() {
+        },
+        onOpen: function() {
+        },
+      });
+	</script>
+<script src="js/jquery-weui.js"></script>
+	<script>
+     $('.weui-tabbar__item-lists').click(function(){
+		$.showLoading();
+        setTimeout(function() {
+          $.hideLoading();
+		  window.location.href="msg2.html";
+        }, 3000)
+	 })
+    </script>
+	 <script>
+      var MAX = 99, MIN = 1;
+      $('.weui-count__decrease').click(function (e) {
+        var $input = $(e.currentTarget).parent().find('.weui-count__number');
+        var number = parseInt($input.val() || "0") - 1
+        if (number < MIN) number = MIN;
+        $input.val(number)
+      })
+      $('.weui-count__increase').click(function (e) {
+        var $input = $(e.currentTarget).parent().find('.weui-count__number');
+        var number = parseInt($input.val() || "0") + 1
+        if (number > MAX) number = MAX;
+        $input.val(number)
+      })
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,164 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<!--重要meta, 必须!-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,shrink-to-fit=no"/>
+<title>城市地铁图</title>
+<style>
+.msubway .top_bar {
+    display: block;
+}
+.top_bar .top_bar_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 13;
+}
+.top_bar .top_bar_mains {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 13;
+	text-align:left;
+	text-indent:10px;
+}
+.top_bar {
+    height: 48px;
+    z-index: 11;
+    text-align: center;
+}
+
+.subwaypage, .top_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+	z-index:999999;
+}
+
+.top_bar, .top_bar .top_bar_bg {
+    background: #f3ad11;
+    width: 100%;
+	color:#fff;
+}
+.top_bar .top_bar_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95px;
+    border-bottom: 1px #fff solid;
+    transform: scaleY(.5);
+    transform-origin: 0 0;
+}
+
+ul.citylist li {
+width:92%;margin:0px auto;
+list-style:none;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-bottom: 1px #ddd solid;
+    user-select: none;
+}
+ul.citylist li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.citylist_wrap {
+    margin-top: 48px;
+    background: #fff;
+    -moz-transition: margin-top .2s ease-in;
+    -webkit-transition: margin-top .2s ease-in;
+    -o-transition: margin-top .2s ease-in;
+    transition: margin-top .2s ease-in;
+    overflow: hidden;
+    zoom: 1;
+}
+.citylistpage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    z-index: 50;
+    background: #fff;
+    overflow: auto;
+    user-select: none;
+}
+.top_bar .city_title {
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    color: #fff;
+}
+#citylistpage{display:none}
+.mysubway{margin-top:44px;}
+.city_name{color:#333;text-decoration:none;line-height:48px;border:1px solid #f3ad11;padding:4px 10px;border-radius:15px;font-size:12px}
+
+</style>
+
+</head>
+<body>
+<style>.amap-subway-api .route_close_btn{bottom:16px !important}</style>
+<div id="subwaypage" class="subwaypage msubway">
+    <div class="top_bar">
+        <div class="top_bar_bg" style="background:#fff;"></div>
+          <div class="top_bar_mains">
+             <a class="city_name" href="javascript:void(0)"><img src="images/nav-3.png" style="width:10px;margin-top:10px;height:10px"><span class="cityo">广州</span></a>
+        </div>
+    </div>
+</div>
+<div id="mysubway"></div>
+<div id="citylistpage" class="citylistpage msubway">
+            <div class="top_bar">
+                <div class="top_bar_bg"></div>
+                <div class="top_bar_main">
+                    <span class="city_title">切换城市</span>
+                </div>
+            </div>
+            <div class="citylist_wrap">
+                <ul class="citylist" id="citylist"><li class="cityitem" adcode="1100"><a href="javascript:void(0)">北京</a></li><li class="cityitem" adcode="3100"><a href="javascript:void(0)">上海</a></li><li class="cityitem" adcode="4401"><a href="javascript:void(0)">广州</a></li><li class="cityitem" adcode="4403"><a href="javascript:void(0)">深圳</a></li><li class="cityitem" adcode="4201"><a href="javascript:void(0)">武汉</a></li><li class="cityitem" adcode="1200"><a href="javascript:void(0)">天津</a></li><li class="cityitem" adcode="3201"><a href="javascript:void(0)">南京</a></li><li class="cityitem" adcode="8100"><a href="javascript:void(0)">香港</a></li><li class="cityitem" adcode="5000"><a href="javascript:void(0)">重庆</a></li><li class="cityitem" adcode="3301"><a href="javascript:void(0)">杭州</a></li><li class="cityitem" adcode="2101"><a href="javascript:void(0)">沈阳</a></li><li class="cityitem" adcode="2102"><a href="javascript:void(0)">大连</a></li><li class="cityitem" adcode="5101"><a href="javascript:void(0)">成都</a></li><li class="cityitem" adcode="2201"><a href="javascript:void(0)">长春</a></li><li class="cityitem" adcode="3205"><a href="javascript:void(0)">苏州</a></li><li class="cityitem" adcode="4406"><a href="javascript:void(0)">佛山</a></li><li class="cityitem" adcode="5301"><a href="javascript:void(0)">昆明</a></li><li class="cityitem" adcode="6101"><a href="javascript:void(0)">西安</a></li><li class="cityitem" adcode="4101"><a href="javascript:void(0)">郑州</a></li><li class="cityitem" adcode="2301"><a href="javascript:void(0)">哈尔滨</a></li><li class="cityitem" adcode="4301"><a href="javascript:void(0)">长沙</a></li><li class="cityitem" adcode="3302"><a href="javascript:void(0)">宁波</a></li><li class="cityitem" adcode="3202"><a href="javascript:void(0)">无锡</a></li><li class="cityitem" adcode="3702"><a href="javascript:void(0)">青岛</a></li><li class="cityitem" adcode="3601"><a href="javascript:void(0)">南昌</a></li><li class="cityitem" adcode="3501"><a href="javascript:void(0)">福州</a></li><li class="cityitem" adcode="4419"><a href="javascript:void(0)">东莞</a></li><li class="cityitem" adcode="4501"><a href="javascript:void(0)">南宁</a></li><li class="cityitem" adcode="3401"><a href="javascript:void(0)">合肥</a></li><li class="cityitem" adcode="1301"><a href="javascript:void(0)">石家庄</a></li><li class="cityitem" adcode="5201"><a href="javascript:void(0)">贵阳</a></li><li class="cityitem" adcode="3502"><a href="javascript:void(0)">厦门</a></li><li class="cityitem" adcode="6501"><a href="javascript:void(0)">乌鲁木齐</a></li></ul>
+            </div>
+</div>
+<script src="https://webapi.amap.com/subway?v=1.0&amp;key=749966b0f442126b5007d90c48559893&amp;callback=cbk"></script>
+<script src="lib/jquery-2.1.4.js"></script>
+
+<script type="text/javascript">
+var adcode =3100;
+    init();
+	function init(){
+		//开启easy模式, 直接完成地铁图基本功能, 无需自己写交互
+		window.cbk = function(){
+			var mysubway = subway("mysubway", {
+				adcode:adcode
+			});
+		};
+	}
+	$('.city_name').click(function(){
+	$('#citylistpage').show();
+	$('#subwaypage').hide();
+	$('.cityitem').unbind("click").click(function(){
+		var adcode = $(this).attr('adcode');
+		var city = $(this).text();
+		
+			var mysubway = subway("mysubway",{
+				adcode: adcode
+			});
+			
+		$('.cityo').text(city);
+		$('#citylistpage').hide();
+		$('#subwaypage').show();
+	})
+})
+</script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>技师详情</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:600px}
+	  .peson-setail{width:90%;background:#f3ad11;padding:15px 5%}
+	  .weui-media-box_appmsg{background:#fff;border-radius:8px;}
+	  .weui-media-box__thumb{border-radius:50px;}
+	  
+	  .icon-shops{width:24%;text-indent:5px}
+	  .weui-tabbar__item{font-size:18px;text-align:center;line-height:50px;color:#fff;background:#f3ad11}
+	  .weui-navbar{background:#fff;border-bottom:1px solid #fff;}
+	  .weui-navbar__item.weui-bar__item--on{background:#fff;border-bottom:1px solid #f3ad11;color:#f3ad11}
+	  .weui-media-box_text{background:#f0f0f0;margin-bottom:10px}
+	  .weui-panel__hd{padding:0px 0px 10px;font-size:16px;color:#f30}
+	  .ask-question{display:none}
+	  .weui-cells_checkbox .weui-check:checked+.weui-icon-checked:before{color:#f3ad11}
+    </style>
+  </head>
+
+  <body ontouchstart>
+<div class="tech-info">
+	<!--技师-->
+	<div class="page__pd">
+	
+		<div class="peson-setail">
+		<div class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="images/avatar2.jpg" alt="">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title"><a href="tel:123"><img  src="images/icon-help.png" style="width:20px;float:right" /></a>陈新安</h4>
+              <p class="weui-media-box__desc">潘潘豪华车专修连锁<br />高级技师</p>
+            </div>
+          </div>
+		</div>
+		<div class="weui-flexs">
+		  <div class="weui-flex__itemone icon-shops"><img src="images/a-01.png">提问</div>
+		  <div class="weui-flex__itemone icon-shops"><img src="images/a-031.png">等待</div>
+		  <div class="weui-flex__itemone icon-shops"><img src="images/q.png">回答</div>
+		  <div class="weui-flex__items icon-shops"><img src="images/a-041.png">完成</div>
+		</div>
+		 <div class="weui-tab" style="border-top:6px solid #e5e5e5">
+		  <div class="weui-navbar">
+			<a class="weui-navbar__item weui-bar__item--on" href="#tab1">
+			  师傅资料
+			</a>
+			<a class="weui-navbar__item" href="#tab2">
+			  服务记录
+			</a>
+		  </div>
+		   <div class="weui-tab__bd">
+			<div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+			<article class="weui-article">
+				<div class="weui-panel__hd">24小时应答</div>
+				<section>
+				  <h3>师傅履历</h3>
+				  <p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				  </p>
+				</section>
+			 
+			</article>
+			<article class="weui-article">
+				
+				<section>
+				  <h3>师傅擅长</h3>
+				  <p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit
+				  </p>
+				</section>
+			 
+			</article>
+			 </div>
+			 <div id="tab2" class="weui-tab__bd-item">
+				 <article class="weui-article">
+				 
+				 <div class="weui-media-box weui-media-box_text">
+					<div class="weui-cell__hd"><img src="images/a.png" alt="" style="width:20px;margin-right:5px;display:block;float:left">车主嘻嘻</div>
+					<p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+					<p><img src="images/q.png" alt="" style="width:20px;margin-right:5px;display:block;float:left">文字列表附来源</p>
+				  </div>
+				 
+				 <div class="weui-media-box weui-media-box_text">
+					<div class="weui-cell__hd"><img src="images/a.png" alt="" style="width:20px;margin-right:5px;display:block;float:left">车主嘻嘻</div>
+					<p class="weui-media-box__desc">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+					<p><img src="images/q.png" alt="" style="width:20px;margin-right:5px;display:block;float:left">文字列表附来源</p>
+				  </div>
+				 </article>
+			</div>
+		  </div>
+		</div>
+	</div>
+	
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:;" class="weui-tabbar__item ask">
+		立即提问
+        </a>
+    </div>
+</div>
+	<!--提问-->
+<div class="ask-question">
+	<div class="weui-cells__title">问题类型</div>
+    <div class="weui-cells weui-cells_checkbox">
+      <label class="weui-cell weui-check__label" for="s11">
+        <div class="weui-cell__hd">
+          <input type="checkbox" class="weui-check" name="checkbox1" id="s11" checked="checked">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>故障</p>
+        </div>
+      </label>
+      <label class="weui-cell weui-check__label" for="s12">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s12">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>维修</p>
+        </div>
+      </label>
+     <label class="weui-cell weui-check__label" for="s13">
+        <div class="weui-cell__hd">
+          <input type="checkbox" name="checkbox1" class="weui-check" id="s13">
+          <i class="weui-icon-checked"></i>
+        </div>
+        <div class="weui-cell__bd">
+          <p>保养</p>
+        </div>
+      </label>
+    </div>
+	<div class="weui-cells__title">问题</div>
+    <div class="weui-cells">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <input class="weui-input" type="text" placeholder="请输入问题">
+        </div>
+      </div>
+    </div>
+
+    <div class="weui-cells__title">备注</div>
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请输入备注" rows="3"></textarea>
+          <div class="weui-textarea-counter"><span>0</span>/200</div>
+        </div>
+      </div>
+    </div>
+	<div class="weui-cells__title">图片上传</div>
+	<div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__bd">
+          <div class="weui-uploader">
+            <div class="weui-uploader__bd">
+              <ul class="weui-uploader__files" id="uploaderFiles">
+                <li class="weui-uploader__file" style="background-image:url(images/pic_160.png)"></li>
+               
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div class="weui-tabbar"> 
+        <a href="javascript:;" class="weui-tabbar__item saves">
+		确认提交
+        </a>
+    </div>
+</div>
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+  <script>
+     $('.ask').click(function(){
+		$('.ask-question').fadeIn(100);
+		$('.tech-info').hide();
+	 })
+	 
+	  $('.saves').click(function(){
+		$.showLoading();
+		setTimeout(function() {
+          $.hideLoading();
+		  $('.ask-question').hide();
+			$('.tech-info').fadeIn(100);
+        }, 3000)
+	 })
+	 
+    </script>
+
+  </body>
+
+</html>

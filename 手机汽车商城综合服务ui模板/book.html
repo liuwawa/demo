@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>车账本</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.weui-navbar:after{border-bottom:none}
+.weui-navbar__item{padding:0;}
+.weui-navbar__item:after{border-right:none}
+.weui-tabbar__label{width:80%;margin:0px auto}
+.weui-navbar__item.weui-bar__item--on{background:none;color:#f3ad11}
+.weui-navbar__item.weui-bar__item--on p{color:#f3ad11;border-bottom:2px solid #f3ad11}
+.weui-media-box__title{font-size:14px;}
+.weui-media-box__title-after{margin-right:10px}
+.weui-media-box__desc{font-size:12px;}
+.weui-media-box__title_second{font-size:12px;color:#ccc}
+.weui-panel .weui-media-box__title-after{margin-right:20px}
+.weui-media-box__title_second .weui-media-box__title-after{color:#f3ad11;font-size:13px;font-weight:bold;margin-right:0px}
+.weui-media-box__desc_second{text-align:right}
+.weui-btn_mini{background:none;color:#b1b1b1;line-height:18px;font-size:12px;padding:0px 5px;}
+      .weui-panel {
+        margin: 0;
+      }
+      .weui-media-box {
+        padding: 8px 15px;
+      }
+      .weui-panel__bd .weui-media-box__hd {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+      }
+      .weui-media-box__desc {
+        -webkit-line-clamp: 1;
+		line-height:18px
+      }
+	  .weui-tab__bd{min-height:450px;margin-top:0px;}
+    </style>
+  </head>
+
+  <body ontouchstart>
+
+	  <div class="weui-search-bar" id="searchBar">
+        <form class="weui-search-bar__form" action="#">
+          <div class="weui-search-bar__box">
+            <i class="weui-icon-search"></i>
+            <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索车牌" required="">
+            <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+          </div>
+          <label class="weui-search-bar__label" id="searchText" style="transform-origin: 0px 0px 0px; opacity: 1; transform: scale(1, 1);">
+            <i class="weui-icon-search"></i>
+            <span>搜索车牌</span>
+          </label>
+        </form>
+        <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+      </div>
+
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+          <div class="weui-panel__bd">
+          <div class="weui-panel weui-panel_access">
+        <div class="weui-panel__bd">
+              <a class="weui-cell weui-cell_access" href="doing.html">
+                <div class="weui-cell__hd"><img src="images/1.png" alt="" style="width:35px;margin-right:5px;display:block"></div>
+                <div class="weui-cell__bd">
+                <h4 class="weui-media-box__title">
+                粤A12312
+                <span class="weui-media-box__title-after">已交车</span>
+				</h4>
+				<p class="weui-media-box__desc">
+                 <div class="weui-btn weui-btn_mini">维修、保养</div>
+				</p>
+				<p class="weui-media-box__title weui-media-box__title_second">
+                我的嘱咐：好
+                <span class="weui-media-box__title-after">￥1000</span>
+				</p>
+				<p class="weui-media-box__desc">
+                预计交车时间：2018.12.02 15:20
+				</p>
+				<p class="weui-media-box__desc weui-media-box__desc_second">
+                接待：李总 2018.11.10 19:33
+				</p>
+                </div>
+               
+              </a>
+              <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd"><img src="images/1.png" alt="" style="width:35px;margin-right:5px;display:block"></div>
+                <div class="weui-cell__bd">
+                <h4 class="weui-media-box__title">
+                粤A12312
+                <span class="weui-media-box__title-after">服务中</span>
+				</h4>
+				<p class="weui-media-box__desc">
+                <div class="weui-btn weui-btn_mini">洗车</div>
+				</p>
+				<p class="weui-media-box__title weui-media-box__title_second">
+                我的嘱咐：好
+                <span class="weui-media-box__title-after">￥89300</span>
+				</p>
+				<p class="weui-media-box__desc">
+                预计交车时间：2018.12.02 15:20
+				</p>
+				<p class="weui-media-box__desc weui-media-box__desc_second">
+                接待：李总 2018.11.10 19:33
+				</p>
+                </div>
+               
+              </a>
+			  <a class="weui-cell weui-cell_access" href="javascript:;">
+                <div class="weui-cell__hd"><img src="images/1.png" alt="" style="width:35px;margin-right:5px;display:block"></div>
+                <div class="weui-cell__bd">
+                <h4 class="weui-media-box__title">
+                粤A12312
+                <span class="weui-media-box__title-after">待服务</span>
+				</h4>
+				<p class="weui-media-box__desc">
+               
+				</p>
+				<p class="weui-media-box__title weui-media-box__title_second">
+                我的嘱咐：好
+                <span class="weui-media-box__title-after">￥423</span>
+				</p>
+				<p class="weui-media-box__desc">
+                预计交车时间：2018.12.02 15:20
+				</p>
+				<p class="weui-media-box__desc weui-media-box__desc_second">
+                接待：李总 2018.11.10 19:33
+				</p>
+                </div>
+               
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+ <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab2.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="service.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab6.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">服务</p>
+        </a>
+		<!--连锁-->
+		<a href="store.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon" style="height:50px;width:50px;margin-top:-23px;">
+            <img src="images/store_1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">门店</p>
+        </a>
+		<!--连锁-->
+        <a href="qanda.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="myinfo.html" class="weui-tabbar__item weui-tabbar__item-index  weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab8.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+      </div>
+    <script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+  </body>
+</html>

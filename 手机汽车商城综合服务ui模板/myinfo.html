@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人中心</title>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<link rel="stylesheet" href="lib/weui.min.css">
+<link rel="stylesheet" href="css/jquery-weui.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+	  .weui-panel__hd:after{border:none}
+	  .weui-cell:before{border-top:0px}
+	  .page__pd{min-height:500px}
+	  a.weui-media-box{color:#fff}
+	  .weui-media-box__thumb{border-radius:80px;}
+	  .weui-media-box_appmsg .weui-media-box__hd{width:70px;height:70px;line-height:70px;}
+	  .weui-media-box__desc em{
+		  background: #fff;
+		border-radius: 20px;
+		color: #f3ad11;
+		font-style: normal;
+		font-size: 13px;
+		padding: 1px 6px;}
+		.weui-cell__ft{float:right;color:#fff;height:32px;
+		width: 80px;line-height:32px;text-align:center;background-image: linear-gradient(to right,#f6dca9,#f3b63f);
+		border-radius: 30px 0 0 30px;position:absolute;right:0px;top:21px;font-size:15px;}
+	}
+	.weui-tabbar-s{width:100%;display:flex;height:50px}
+	.weui-tabbar-s .weui-tabbar__item {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 5px 0 0;
+    font-size: 0;
+    color: #999;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.weui-grid__icons{width:100%;line-height:33px;height:33px;margin:0px auto;color:#f30;font-size:16px;text-align:center}
+.weui-flex_index{padding:10px 0px;margin-bottom:0px;}
+.weui-panel__hd{padding:5px 15px 10px;border-top:6px solid #e5e5e5;border-bottom:1px solid #e5e5e5;}
+.weui-panel__hd span{font-weight:bold;color:#f3ad11;font-size:18px}
+.swiper-container {
+        width: 100%;border-top:6px solid #e5e5e5;
+      }
+	  .overtimes{float:right;color:#f30;font-size:14px}
+    </style>
+  </head>
+
+  <body ontouchstart>
+	<div class="page__pd">
+		<div class="weui-panel weui-panel_access" style="background:#f3ad11;padding:10px 0px;">
+        <div class="weui-panel__bd">
+          <a href="javascript:;" class="weui-media-box weui-media-box_appmsg">
+            <div class="weui-media-box__hd">
+              <img class="weui-media-box__thumb" src="images/avatar.jpg" alt="">
+            </div>
+            <div class="weui-media-box__bd">
+              <h4 class="weui-media-box__title"><span class="weui-cell__ft">福利中心</span>车主</h4>
+              <p class="weui-media-box__desc">
+				<em>Lv2.金牌会员</em>
+			  </p>
+			  
+            </div>
+          </a>
+          
+        </div>
+		</div>
+		<div class="weui-flex weui-flex_index">
+			<div class="weui-flex__item">
+			  <a href="package.html">
+				<div class="weui-grid__icons">
+				 10000000
+				</div>
+			  <p class="weui-grid__label" style="color:#f3ad11">
+				我的余额
+			  </p>
+			  </a>
+			</div>
+			<div class="weui-flex__item">
+			  <a href="appoint-order.html">
+				<div class="weui-grid__icon">
+				  <img src="images/1-11.png" alt="">
+				</div>
+				<p class="weui-grid__label">
+				  我的预约
+				</p>
+			  </a>
+			</div>
+			<div class="weui-flex__item">
+			  <a href="myorder.html">
+				<div class="weui-grid__icon">
+				  <img src="images/p-1.png" alt="">
+				</div>
+				<p class="weui-grid__label">
+				  我的订单
+				</p>
+			  </a>
+			</div>
+			<div class="weui-flex__item">
+			  <a href="ask.html">
+				<div class="weui-grid__icon">
+				  <img src="images/q.png" alt="">
+				</div>
+				<p class="weui-grid__label">
+				  我的提问
+				</p>
+			  </a>
+			</div>
+		  </div>
+		<div class="swiper-container">
+		<div class="weui-panel__hd"><span>|</span> 我的车辆</div>
+		  <!-- Additional required wrapper -->
+		  <div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide">
+				<a class="weui-cell weui-cell_access" href="car-detail.html">
+				<div class="weui-cell__hd"><img src="images/1.png" alt="" style="width:30px;margin-right:5px;display:block"></div>
+				<div class="weui-cell__bd">
+				  <p><span class="overtimes">车险即将到期</span>粤A***99</p>
+				  <div class="weui-media-box__desc">奔驰C200<br>进店里程：100203</div>
+				</div>
+			  </a>
+			</div>
+			<div class="swiper-slide">
+				<a class="weui-cell weui-cell_access"  href="car-detail.html">
+				<div class="weui-cell__hd"><img src="images/1.png" alt="" style="width:30px;margin-right:5px;display:block"></div>
+				<div class="weui-cell__bd">
+				  <p><span class="overtimes">强险即将到期</span>粤A9***9</p>
+				  <div class="weui-media-box__desc">奔驰C200<br>进店里程：100203</div>
+				</div>
+			  </a>
+			</div>
+		  </div>
+		</div>
+	
+		<div class="weui-panel__hd"><span>|</span> 个人中心</div>
+		<div class="weui-flex weui-flex_index">
+    <div class="weui-flex__item">
+      <a href="book.html">
+        <div class="weui-grid__icon">
+          <img src="images/che-1.png" alt="">
+        </div>
+      <p class="weui-grid__label">
+        车账本
+      </p>
+      </a>
+    </div>
+    
+    <div class="weui-flex__item">
+      <a href="coupon.html">
+        <div class="weui-grid__icon">
+          <img src="images/che-3.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          优惠券
+        </p>
+      </a>
+    </div>
+    <div class="weui-flex__item">
+      <a href="package.html">
+        <div class="weui-grid__icon">
+          <img src="images/che-4.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          钱包
+        </p>
+      </a>
+    </div>
+  </div>
+  <div class="weui-flex weui-flex_index">
+  <div class="weui-flex__item">
+      <a href="cars.html">
+        <div class="weui-grid__icon">
+          <img src="images/che-2.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          车库
+        </p>
+      </a>
+    </div>
+    <div class="weui-flex__item">
+      <a href="commont.html">
+        <div class="weui-grid__icon">
+          <img src="images/1-15.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          服务点评
+        </p>
+      </a>
+    </div>
+    <div class="weui-flex__item">
+      <a href="center.html">
+        <div class="weui-grid__icon">
+          <img src="images/che-5.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          帮助中心
+        </p>
+      </a>
+    </div>
+    <!--<div class="weui-flex__item">
+      <a href="set.html">
+        <div class="weui-grid__icon">
+          <img src="images/set.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          系统设置
+        </p>
+      </a>
+    </div>-->
+    <div class="weui-flex__item">
+      <a href="javascript:;" class="needs">
+        <div class="weui-grid__icon">
+          <img src="images/che-6.png" alt="">
+        </div>
+        <p class="weui-grid__label">
+          推荐好友
+        </p>
+      </a>
+    </div>
+  </div>
+	</div>
+	
+    <div class="weui-footer">
+      <p class="weui-footer__links">
+        <a href="javascript:;" class="weui-footer__link">智能门店</a>
+      </p>
+      <p class="weui-footer__text">Copyright © 2019 广州微位科技</p>
+    </div>
+	<div class="foot-divs"></div>
+	<div class="weui-tabbar">
+        <a href="index.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab2.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">首页</p>
+        </a>
+        <a href="service.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab6.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">服务</p>
+        </a>
+		<!--连锁-->
+		<a href="store.html" class="weui-tabbar__item weui-tabbar__item-index ">
+          <div class="weui-tabbar__icon" style="height:50px;width:50px;margin-top:-23px;">
+            <img src="images/store_1.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">门店</p>
+        </a>
+		<!--连锁-->
+        <a href="qanda.html" class="weui-tabbar__item weui-tabbar__item-index">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab3.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="myinfo.html" class="weui-tabbar__item weui-tabbar__item-index weui-bar__item--on">
+          <div class="weui-tabbar__icon">
+            <img src="images/tab8.png" alt="">
+          </div>
+          <p class="weui-tabbar__label">我的</p>
+        </a>
+      </div>
+
+	   
+<script src="lib/jquery-2.1.4.js"></script>
+<script src="lib/fastclick.js"></script>
+<script>
+  $(function() {
+    FastClick.attach(document.body);
+  });
+</script>
+<script src="js/jquery-weui.js"></script>
+    <script src="js/swiper.js"></script>
+ 
+    <script>
+      $(".swiper-container").swiper({
+        loop: true,
+        autoplay: 5000
+      }); 
+    </script>
+
+  </body>
+
+</html>
