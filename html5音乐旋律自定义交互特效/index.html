@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<title>ChimeTime™</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="container">
+    
+    <div id="toy">
+
+      <audio id="chime1" src="img/chime1.mp3"></audio>
+      <audio id="chime2" src="img/chime2.mp3"></audio>
+      <audio id="chime3" src="img/chime3.mp3"></audio>
+      <audio id="chime4" src="img/chime4.mp3"></audio>
+      <audio id="chime5" src="img/chime5.mp3"></audio>
+      <audio id="chime6" src="img/chime6.mp3"></audio>
+      <audio id="chime7" src="img/chime7.mp3"></audio>
+      <audio id="chime8" src="img/chime8.mp3"></audio>
+
+      <div id="playhead"></div>
+      <div id="steps"></div>
+
+      <div id="controls">
+      
+        <button id="play">
+          <span id="pauseTxt">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                <path fill="#333" d="M14,19H18V5H14M6,19H10V5H6V19Z" />
+            </svg>
+          </span>
+            <span id="playTxt"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#333" d="M8,5.14V19.14L19,12.14L8,5.14Z" />
+            </svg>        
+          </span>
+        </button> 
+        
+        <input id="tempo" type="range" min="1" max="9" value="5">
+        
+        <button id="clear">
+          <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="#333" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+          </svg>
+        </button>
+        
+      </div>
+      
+    </div>
+
+</div>
+
+<script src='js/TweenMax.min.js'></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
