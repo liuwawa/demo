@@ -1,0 +1,71 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - ISVImageScrollView (0.1.2)
+  - MBProgressHUD (1.1.0)
+  - MMLayout (0.2.0)
+  - ReactiveObjC (3.1.1)
+  - SDWebImage (5.4.2):
+    - SDWebImage/Core (= 5.4.2)
+  - SDWebImage/Core (5.4.2)
+  - Toast (4.0.0)
+  - TXIMSDK_iOS (4.6.58)
+  - TXIMSDK_TUIKit_iOS (4.6.54):
+    - ISVImageScrollView
+    - MMLayout
+    - ReactiveObjC
+    - SDWebImage
+    - Toast
+    - TXIMSDK_iOS
+  - TXLiteAVSDK_TRTC (6.8.8002)
+
+DEPENDENCIES:
+  - AFNetworking
+  - MBProgressHUD
+  - MMLayout
+  - ReactiveObjC
+  - SDWebImage
+  - TXIMSDK_TUIKit_iOS
+  - TXLiteAVSDK_TRTC
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - ISVImageScrollView
+    - MBProgressHUD
+    - MMLayout
+    - ReactiveObjC
+    - SDWebImage
+    - Toast
+    - TXIMSDK_iOS
+    - TXIMSDK_TUIKit_iOS
+    - TXLiteAVSDK_TRTC
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  ISVImageScrollView: ba511d12a1661b40feb8921309c0854bf93ec749
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MMLayout: 3fb59d58eeb8656c64e61d550fb0088e10666c11
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
+  SDWebImage: 4ca2dc4eefae4224bea8f504251cda485a363745
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TXIMSDK_iOS: d4231ccd8a045f54ca04d008dba46fdbf25687fb
+  TXIMSDK_TUIKit_iOS: 4b2dc7fa98bab179b199a9a411cbce57de8c337a
+  TXLiteAVSDK_TRTC: 5a9e9678a44311fab331e8f077012f31334b9227
+
+PODFILE CHECKSUM: 3f738094aa69c2e51daf7cd6e3de46212490c177
+
+COCOAPODS: 1.8.4
