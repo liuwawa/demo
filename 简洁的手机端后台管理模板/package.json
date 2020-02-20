@@ -20,7 +20,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "sass-lint": "^1.10.2"
   },
   "dependencies": {
